@@ -1,863 +1,759 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+{% extends "base.html" %}
 
-<head>
-	<!--- basic page needs
+{% block title  %} Harraoui Sohaib {% endblock %}
+
+
+{% block links %}
+<link rel="icon" type="image/png" href="{{  url_for('static' , filename ='favicon.png')  }}" />
+{% endblock %}
+{% block style  %}
+<style>
+	.more-div {
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- intro section
    ================================================== -->
-	<meta charset="utf-8" />
-	<title>Harraoui Sohaib</title>
-	<meta name="description" content="" />
-	<meta name="author" content="" />
+<section id="intro">
+	<div class="intro-overlay"></div>
 
-	<!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-	<!-- CSS
-   ================================================== -->
-	<link rel="stylesheet" href="../static/css/base.css" />
-	<link rel="stylesheet" href="../static/css/main.css" />
-	<link rel="stylesheet" href="../static/css/vendor.css" />
-
-	<!-- script
-   ================================================== -->
-	<script src="../static/js/modernizr.js"></script>
-	<script src="../static/js/pace.min.js"></script>
-
-	<!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png" />
-	<style>
-		.more-div {
-			display: flex;
-			justify-content: center;
-			margin-top: 70px;
-		}
-	</style>
-</head>
-
-<body id="top">
-	<!-- header 
-   ================================================== -->
-	<header>
+	<div class="intro-content">
 		<div class="row">
-			<div class="top-bar">
-				<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-				<p class="logo">
-					<a href="#">Menu</a>
-				</p>
-
-				<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current">
-							<a class="smoothscroll" href="#intro" title="">Home</a>
-						</li>
-						<li><a class="smoothscroll" href="#about" title="">About</a></li>
-						<li>
-							<a class="smoothscroll" href="#resume" title="">Resume</a>
-						</li>
-						<li>
-							<a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
-						</li>
-						<li>
-							<a class="smoothscroll" href="#contact" title="">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!-- /top-bar -->
-		</div>
-		<!-- /row -->
-	</header>
-	<!-- /header -->
-	<!-- intro section
-   ================================================== -->
-	<section id="intro">
-		<div class="intro-overlay"></div>
-
-		<div class="intro-content">
-			<div class="row">
-				<div class="col-twelve">
-					<h5>Hello, World.</h5>
-					<h1>I'm Harraoui Sohaib.</h1>
-
-					<p class="intro-position">
-						<span>Embedded Systems Student</span>
-						<span>Web Developer</span>
-					</p>
-
-					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-				</div>
-			</div>
-		</div>
-		<!-- /intro-content -->
-
-		<ul class="intro-social">
-			<li>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-			</li>
-			<li>
-				<a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/harraoui_sohaib/"><i class="fa fa-instagram"></i></a>
-			</li>
-		</ul>
-		<!-- /intro-social -->
-	</section>
-	<!-- /intro -->
-
-	<!-- about section
-   ================================================== -->
-	<section id="about">
-		<div class="row section-intro">
 			<div class="col-twelve">
-				<h5>About</h5>
-				<h1>Let me introduce myself.</h1>
+				<h5>Hello, World.</h5>
+				<h1>I'm Harraoui Sohaib.</h1>
 
-				<div class="intro-info">
-					<img src="../static/images/profile-pic.jpg" alt="Profile Picture" />
-
-					<p class="lead"></p>
-				</div>
-			</div>
-		</div>
-		<!-- /section-intro -->
-
-		<div class="row about-content">
-			<div class="col-six tab-full">
-				<h3>Profile</h3>
-				<p>
-					I am very motivated and ambitious, also very passionate about
-					technology. I love bugs and making things work and learning about
-					technologies And how things are working. I have acquired a solid
-					knowledge of the fundamentals of the web and embedded systems
-					through self-study and my academic background and I am currently
-					looking for a new experience to practice my knowledge.
+				<p class="intro-position">
+					<span>Embedded Systems Student</span>
+					<span>Web Developer</span>
 				</p>
 
-				<ul class="info-list">
-					<li>
-						<strong>Fullname:</strong>
-						<span>Haraaoui Sohaib</span>
-					</li>
-					<li>
-						<strong>Birth Date:</strong>
-						<span>May 21, 2003</span>
-					</li>
-					<li>
-						<strong>Job:</strong>
-						<span>Student, Embedded Systems</span>
-					</li>
-					<li>
-						<strong>Website:</strong>
-						<span>www.kardswebsite.com</span>
-					</li>
-					<li>
-						<strong>Email:</strong>
-						<span>harraoui.sohaib1@gmail.com</span>
-					</li>
-				</ul>
-				<!-- /info-list -->
+				<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 			</div>
+		</div>
+	</div>
+	<!-- /intro-content -->
 
-			<div class="col-six tab-full">
-				<h3>Skills</h3>
-				<!-- <p>Lorem ipsum Qui veniam ut consequat ex
+	<ul class="intro-social">
+		<li>
+			<a href="https://www.linkedin.com/in/harraoui-sohaib-89849b246/"><i class="fa fa-linkedin"></i></a>
+		</li>
+		<li>
+			<a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/harraoui_sohaib/"><i class="fa fa-instagram"></i></a>
+		</li>
+	</ul>
+	<!-- /intro-social -->
+</section>
+<!-- /intro -->
+
+<!-- about section
+   ================================================== -->
+<section id="about">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>About</h5>
+			<h1>Let me introduce myself.</h1>
+
+			<div class="intro-info">
+				<img src="../static/images/profile-pic.jpg" alt="Profile Picture" />
+
+				<p class="lead"></p>
+			</div>
+		</div>
+	</div>
+	<!-- /section-intro -->
+
+	<div class="row about-content">
+		<div class="col-six tab-full">
+			<h3>Profile</h3>
+			<p>
+				I am very motivated and ambitious, also very passionate about
+				technology. I love bugs and making things work and learning about
+				technologies And how things are working. I have acquired a solid
+				knowledge of the fundamentals of the web and embedded systems
+				through self-study and my academic background and I am currently
+				looking for a new experience to practice my knowledge.
+			</p>
+
+			<ul class="info-list">
+				<li>
+					<strong>Fullname:</strong>
+					<span>Haraaoui Sohaib</span>
+				</li>
+				<li>
+					<strong>Birth Date:</strong>
+					<span>May 21, 2003</span>
+				</li>
+				<li>
+					<strong>Job:</strong>
+					<span>Student, Embedded Systems</span>
+				</li>
+				<li>
+					<strong>Website:</strong>
+					<span>www.kardswebsite.com</span>
+				</li>
+				<li>
+					<strong>Email:</strong>
+					<span>harraoui.sohaib1@gmail.com</span>
+				</li>
+			</ul>
+			<!-- /info-list -->
+		</div>
+
+		<div class="col-six tab-full">
+			<h3>Skills</h3>
+			<!-- <p>Lorem ipsum Qui veniam ut consequat ex
 				ullamco nulla in non ut esse in magna sint minim officia
 				consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
 
-				<ul class="skill-bars">
-					<li>
-						<div class="progress percent60"><span>60%</span></div>
-						<strong>HTML5</strong>
-					</li>
-					<li>
-						<div class="progress percent70"><span>70%</span></div>
-						<strong>CSS3</strong>
-					</li>
-					<li>
-						<div class="progress percent60"><span>60%</span></div>
-						<strong>Bootstrap</strong>
-					</li>
-					<li>
-						<div class="progress percent55"><span>55%</span></div>
-						<strong>JavaScript</strong>
-					</li>
-					<li>
-						<div class="progress percent65"><span>65%</span></div>
-						<strong>Flask</strong>
-					</li>
-					<li>
-						<div class="progress percent55"><span>55%</span></div>
-						<strong>SQlite,MySQL</strong>
-					</li>
-					<li>
-						<div class="progress percent60"><span>60%</span></div>
-						<strong>Firebase</strong>
-					</li>
-					<li>
-						<div class="progress percent80"><span>80%</span></div>
-						<strong>Arduino & Embedded c++</strong>
-					</li>
-				</ul>
-				<!-- /skill-bars -->
-			</div>
+			<ul class="skill-bars">
+				<li>
+					<div class="progress percent60"><span>60%</span></div>
+					<strong>HTML5</strong>
+				</li>
+				<li>
+					<div class="progress percent70"><span>70%</span></div>
+					<strong>CSS3</strong>
+				</li>
+				<li>
+					<div class="progress percent60"><span>60%</span></div>
+					<strong>Bootstrap</strong>
+				</li>
+				<li>
+					<div class="progress percent55"><span>55%</span></div>
+					<strong>JavaScript</strong>
+				</li>
+				<li>
+					<div class="progress percent65"><span>65%</span></div>
+					<strong>Flask</strong>
+				</li>
+				<li>
+					<div class="progress percent55"><span>55%</span></div>
+					<strong>SQlite,MySQL</strong>
+				</li>
+				<li>
+					<div class="progress percent60"><span>60%</span></div>
+					<strong>Firebase</strong>
+				</li>
+				<li>
+					<div class="progress percent80"><span>80%</span></div>
+					<strong>Arduino & Embedded c++</strong>
+				</li>
+			</ul>
+			<!-- /skill-bars -->
 		</div>
+	</div>
 
-		<div class="row button-section">
-			<div class="col-twelve">
-				<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
-				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
-			</div>
+	<div class="row button-section">
+		<div class="col-twelve">
+			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
+			<a href="{{ url_for('get' , filename = 'myCV.pdf') }}" title="Download CV" class="button button-primary">Download
+				CV</a>
 		</div>
-	</section>
-	<!-- /process-->
+	</div>
+</section>
+<!-- /process-->
 
-	<!-- resume Section
+<!-- resume Section
    ================================================== -->
-	<section id="resume" class="grey-section">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Resume</h5>
-				<h1>More of my credentials.</h1>
+<section id="resume" class="grey-section">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Resume</h5>
+			<h1>More of my credentials.</h1>
 
-				<!-- <p class="lead">Lorem ipsum Do commodo
+			<!-- <p class="lead">Lorem ipsum Do commodo
 					 in proident enim in dolor cupidatat adipisicing
 					  dolore officia nisi aliqua incididunt Ut veniam
 						 lorem ipsum Consectetur ut in in eu do.</p> -->
-			</div>
 		</div>
-		<!-- /section-intro-->
+	</div>
+	<!-- /section-intro-->
 
-		<div class="row resume-timeline">
-			<div class="col-twelve resume-header">
-				<h2>Education</h2>
-			</div>
-			<!-- /resume-header -->
+	<div class="row resume-timeline">
+		<div class="col-twelve resume-header">
+			<h2>Education</h2>
+		</div>
+		<!-- /resume-header -->
 
-			<div class="col-twelve">
-				<div class="timeline-wrap">
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>DUT-Embedded Systems</h3>
-							<p>September 2021 - 2023</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>
-								University Sidi Mohamed Ben Abdellah Higher School of
-								technology (EST) - Fes
-							</h4>
-							<p>Major of S2 & S3</p>
-						</div>
+		<div class="col-twelve">
+			<div class="timeline-wrap">
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
 					</div>
-					<!-- /timeline-block -->
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Professional Baccalaureat - Elect - Equi - Com</h3>
-							<p>september 2018 - 2021</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Tamansourte Highschool - Marrakech</h4>
-							<p>Major professional baccalaureate at regional level</p>
-						</div>
+					<div class="timeline-header">
+						<h3>DUT-Embedded Systems</h3>
+						<p>September 2021 - 2023</p>
 					</div>
-					<!-- /timeline-block -->
+
+					<div class="timeline-content">
+						<h4>
+							University Sidi Mohamed Ben Abdellah Higher School of
+							technology (EST) - Fes
+						</h4>
+						<p>Major of S2 & S3</p>
+					</div>
 				</div>
-				<!-- /timeline-wrap -->
-			</div>
-			<!-- /col-twelve -->
-		</div>
-		<!-- /resume-timeline -->
-		<!-- Certifact section -->
-		<div class="row resume-timeline">
-			<div class="col-twelve resume-header">
-				<h2>Certificat</h2>
-			</div>
-			<!-- /resume-header -->
+				<!-- /timeline-block -->
 
-			<div class="col-twelve">
-				<div class="timeline-wrap">
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>LinkedIn Learning</h3>
-							<p>Jul 29 , 2022</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Become a Software Developer : 30 hours 26 min</h4>
-							<p>
-								Top skills covered : <br />
-								Full-Stack Development, JavaScript, Software Development, Web
-								Design, Front-End Development
-							</p>
-						</div>
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
 					</div>
-					<!-- /timeline-block -->
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Orange Digital Center Rabat certifies</h3>
-							<p></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Microcontrôleurs & IoT</h4>
-							<p>
-								Has actively participate in
-								<strong>Microcontrôleurs & IoT</strong> training organised by
-								Orange Digital Center Rabat.
-							</p>
-						</div>
+					<div class="timeline-header">
+						<h3>Professional Baccalaureat - Elect - Equi - Com</h3>
+						<p>september 2018 - 2021</p>
 					</div>
-					<!-- /timeline-block -->
+
+					<div class="timeline-content">
+						<h4>Tamansourte Highschool - Marrakech</h4>
+						<p>Major professional baccalaureate at regional level</p>
+					</div>
 				</div>
-				<!-- /timeline-wrap -->
+				<!-- /timeline-block -->
 			</div>
-			<!-- /col-twelve -->
+			<!-- /timeline-wrap -->
 		</div>
-		<!-- /resume-timeline -->
+		<!-- /col-twelve -->
+	</div>
+	<!-- /resume-timeline -->
+	<!-- Certifact section -->
+	<div class="row resume-timeline">
+		<div class="col-twelve resume-header">
+			<h2>Certificat</h2>
+		</div>
+		<!-- /resume-header -->
 
-		<div class="row resume-timeline">
-			<div class="col-twelve resume-header">
-				<h2>Professional Experience</h2>
-			</div>
-			<!-- /resume-header -->
-
-			<div class="col-twelve">
-				<div class="timeline-wrap">
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Initialsation Training</h3>
-							<p>1 mount</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>SO SYSTEME</h4>
-							<p>
-								Installation of surveillance cameras around the company's
-								workshops
-							</p>
-						</div>
+		<div class="col-twelve">
+			<div class="timeline-wrap">
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
 					</div>
-					<!-- /timeline-block -->
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Mini-Projet</h3>
-							<p></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Weather station with alarme</h4>
-							<p>
-								Realization of a weather station with alarm based on Arduino
-								and RTC DS3231 which displays the physical atmospheric
-								quantities in a 16*2 LCD with an alarm adjustable by user.
-							</p>
-						</div>
+					<div class="timeline-header">
+						<h3>LinkedIn Learning</h3>
+						<p>Jul 29 , 2022</p>
 					</div>
-					<!-- /timeline-block -->
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Mini-Projet</h3>
-							<p></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Web site for the sale of clothes</h4>
-							<p>
-								front-end : HTML , CSS , Bootstrap , JavaScript <br />
-								back-end : Python ( Flask , SQLAlchemy ) , SQLite
-							</p>
-						</div>
+					<div class="timeline-content">
+						<h4>Become a Software Developer : 30 hours 26 min</h4>
+						<p>
+							Top skills covered : <br />
+							Full-Stack Development, JavaScript, Software Development, Web
+							Design, Front-End Development
+						</p>
 					</div>
-					<!-- /timeline-block -->
-
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Projet PFE</h3>
-							<p></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Solar Tracker IOT</h4>
-							<p>
-								Réalisation d’une suiveur de soleil à base Arduino et Ethernet
-								Sheild connecté au cayenne My devices
-							</p>
-						</div>
-					</div>
-					<!-- /timeline-block -->
 				</div>
-				<!-- /timeline-wrap -->
-			</div>
-			<!-- /col-twelve -->
-		</div>
-		<!-- /resume-timeline -->
-	</section>
-	<!-- /features -->
+				<!-- /timeline-block -->
 
-	<!-- Portfolio Section
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Orange Digital Center Rabat certifies</h3>
+						<p></p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Microcontrôleurs & IoT</h4>
+						<p>
+							Has actively participate in
+							<strong>Microcontrôleurs & IoT</strong> training organised by
+							Orange Digital Center Rabat.
+						</p>
+					</div>
+				</div>
+				<!-- /timeline-block -->
+			</div>
+			<!-- /timeline-wrap -->
+		</div>
+		<!-- /col-twelve -->
+	</div>
+	<!-- /resume-timeline -->
+
+	<div class="row resume-timeline">
+		<div class="col-twelve resume-header">
+			<h2>Professional Experience</h2>
+		</div>
+		<!-- /resume-header -->
+
+		<div class="col-twelve">
+			<div class="timeline-wrap">
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Initialsation Training</h3>
+						<p>1 mount</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>SO SYSTEME</h4>
+						<p>
+							Installation of surveillance cameras around the company's
+							workshops
+						</p>
+					</div>
+				</div>
+				<!-- /timeline-block -->
+
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Mini-Projet</h3>
+						<p></p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Weather station with alarme</h4>
+						<p>
+							Realization of a weather station with alarm based on Arduino
+							and RTC DS3231 which displays the physical atmospheric
+							quantities in a 16*2 LCD with an alarm adjustable by user.
+						</p>
+					</div>
+				</div>
+				<!-- /timeline-block -->
+
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Mini-Projet</h3>
+						<p></p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Web site for the sale of clothes</h4>
+						<p>
+							front-end : HTML , CSS , Bootstrap , JavaScript <br />
+							back-end : Python ( Flask , SQLAlchemy ) , SQLite
+						</p>
+					</div>
+				</div>
+				<!-- /timeline-block -->
+
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Projet PFE</h3>
+						<p></p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Solar Tracker IOT</h4>
+						<p>
+							Réalisation d’une suiveur de soleil à base Arduino et Ethernet
+							Sheild connecté au cayenne My devices
+						</p>
+					</div>
+				</div>
+				<!-- /timeline-block -->
+			</div>
+			<!-- /timeline-wrap -->
+		</div>
+		<!-- /col-twelve -->
+	</div>
+	<!-- /resume-timeline -->
+</section>
+<!-- /features -->
+
+<!-- Portfolio Section
    ================================================== -->
-	<section id="portfolio">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Portfolio</h5>
-				<h1>Check Out Some of My Works.</h1>
+<section id="portfolio">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Portfolio</h5>
+			<h1>Check Out Some of My Works.</h1>
 
-				<p class="lead"></p>
-			</div>
+			<p class="lead"></p>
 		</div>
-		<!-- /section-intro-->
+	</div>
+	<!-- /section-intro-->
 
-		<div class="row portfolio-content">
-			<div class="col-twelve">
-				<!-- portfolio-wrapper -->
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/kasper.png" alt="kasper" />
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Kasper Design</h3>
-										<span class="folio-types">
-											Design i Converte to Code
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/Bondi.png" alt="Bondi" />
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Bondi Template</h3>
-										<span class="folio-types">
-											Design i Converte to Code
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/Leon.png" alt="Leon" />
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Leon Template</h3>
-										<span class="folio-types">
-											Design i Converte to Code
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/store.png" alt="Store" />
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Clothes Online Store</h3>
-										<span class="folio-types"> Mini-Project </span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/station1.jpg" alt="station" />
-							<a href="#modal-05" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Weather station with alarme</h3>
-										<span class="folio-types"> Arduino Project </span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="../static/images/portfolio/pfe.png" alt="pfe" />
-							<a href="#modal-06" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Solar Tracker IOT</h3>
-										<span class="folio-types"> PFE Project </span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- /folio-item -->
-
-					<!-- modal popups - begin
-	            ============================================================= -->
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/modals/kasper.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Kasper Design</h4>
-							<p>
-								I code the kasper Design with HTML5 & CSS3 and pure JavaScript
-								with no front-end framework ,also i add a back-end app to
-								template with a flask framework
-							</p>
-
-							<div class="categories">Web Development</div>
-							<div class="categories">Click details for live demo</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/H-sohaib/Kasper-Template">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-01 -->
-
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/modals/Bondi.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Bondi Template</h4>
-							<p>
-								this template based on Bootsrup 5 , HTML5 , some CSS3 and
-								JavaScript for add a filter of blog
-							</p>
-
-							<div class="categories">Front-end Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/H-sohaib/Bondi-Template">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-02 -->
-
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/Leon.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Leon Template</h4>
-							<p>
-								Simple Template coded with pure HTML & CSS with a few line of
-								JavaScript for button menu fonctionnality
-							</p>
-
-							<div class="categories">Front-end Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/H-sohaib/Leon-Template">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-03 -->
-
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/modals/store.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Clothes Online Store</h4>
-							<p>
-								The website doesn't allow user to see the current product in
-								database after he registered on the website, after logging in
-								to the site , the user can access the product display page to
-								see their prices and how many pieces are currently available
-							</p>
-
-							<div class="categories">Web Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/H-sohaib/Clothes-Online-Store">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-04 -->
-
-					<div id="modal-05" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/station2.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Weather station with alarme</h4>
-							<p>
-								Realization of a weather station with alarm based on Arduino
-								and RTC DS3231 which displays the physical atmospheric
-								quantities in a 16*2 LCD with an alarm adjustable by user.
-							</p>
-
-							<div class="categories">Arduino Project</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-05 -->
-
-					<div id="modal-06" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="../static/images/portfolio/Leon.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Solar Tracker IOT</h4>
-							<p>
-								Proin gravida nibh vel velit auctor aliquet. Aenean
-								sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-								ipsum, nec sagittis sem nibh id elit.
-							</p>
-
-							<div class="categories">Arduino Project & Web Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<!-- /modal-06 -->
-					<!-- modal popups - end
-	            ============================================================= -->
-				</div>
-				<!-- /portfolio-wrapper -->
-
-				<!-- More of My work Button -->
-				<!-- More of My work Button -->
-			</div>
-			<!-- /twelve -->
-		</div>
-		<!-- /portfolio-content -->
-
-		<!-- more button -->
-		<div class="more-div">
-			<button class=""><a href="">More of My work</a></button>
-		</div>
-		<!-- end more -->
-	</section>
-	<!-- /portfolio -->
-
-	<!-- contact
-   ================================================== -->
-	<section id="contact">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Contact</h5>
-				<h1>I'd Love To Hear From You.</h1>
-
-				<p class="lead"></p>
-			</div>
-		</div>
-		<!-- /section-intro -->
-
-		<div class="row contact-form">
-			<div class="col-twelve">
-				<!-- form -->
-				<form name="contactForm" id="contactForm" method="post" action="">
-					<fieldset>
-						<div class="form-field">
-							<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-								required="" />
-						</div>
-						<div class="form-field">
-							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" />
-						</div>
-						<div class="form-field">
-							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" />
-						</div>
-						<div class="form-field">
-							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-								required=""></textarea>
-						</div>
-						<div class="form-field">
-							<button class="submitform">Submit</button>
-							<div id="submit-loader">
-								<div class="text-loader">Sending...</div>
-								<div class="s-loader">
-									<div class="bounce1"></div>
-									<div class="bounce2"></div>
-									<div class="bounce3"></div>
+	<div class="row portfolio-content">
+		<div class="col-twelve">
+			<!-- portfolio-wrapper -->
+			<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/kasper.png" alt="kasper" />
+						<a href="#modal-01" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Kasper Design</h3>
+									<span class="folio-types">
+										Design i Converte to Code
+									</span>
 								</div>
 							</div>
-						</div>
-					</fieldset>
-				</form>
-				<!-- Form End -->
-
-				<!-- contact-warning -->
-				<div id="message-warning"></div>
-				<!-- contact-success -->
-				<div id="message-success">
-					<i class="fa fa-check"></i>Your message was sent, thank you!<br />
+						</a>
+					</div>
 				</div>
+				<!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/Bondi.png" alt="Bondi" />
+						<a href="#modal-02" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Bondi Template</h3>
+									<span class="folio-types">
+										Design i Converte to Code
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/Leon.png" alt="Leon" />
+						<a href="#modal-03" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Leon Template</h3>
+									<span class="folio-types">
+										Design i Converte to Code
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/store.png" alt="Store" />
+						<a href="#modal-04" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Clothes Online Store</h3>
+									<span class="folio-types"> Mini-Project </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/station1.jpg" alt="station" />
+						<a href="#modal-05" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Weather station with alarme</h3>
+									<span class="folio-types"> Arduino Project </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/pfe.png" alt="pfe" />
+						<a href="#modal-06" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Solar Tracker IOT</h3>
+									<span class="folio-types"> PFE Project </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /folio-item -->
+
+				<!-- modal popups - begin
+	            ============================================================= -->
+				<div id="modal-01" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/modals/kasper.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Kasper Design</h4>
+						<p>
+							I code the kasper Design with HTML5 & CSS3 and pure JavaScript
+							with no front-end framework ,also i add a back-end app to
+							template with a flask framework
+						</p>
+
+						<div class="categories">Web Development</div>
+						<div class="categories">Click details for live demo</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/Kasper-Template">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-01 -->
+
+				<div id="modal-02" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/modals/Bondi.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Bondi Template</h4>
+						<p>
+							this template based on Bootsrup 5 , HTML5 , some CSS3 and
+							JavaScript for add a filter of blog
+						</p>
+
+						<div class="categories">Front-end Development</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/Bondi-Template">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-02 -->
+
+				<div id="modal-03" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/Leon.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Leon Template</h4>
+						<p>
+							Simple Template coded with pure HTML & CSS with a few line of
+							JavaScript for button menu fonctionnality
+						</p>
+
+						<div class="categories">Front-end Development</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/Leon-Template">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-03 -->
+
+				<div id="modal-04" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/modals/store.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Clothes Online Store</h4>
+						<p>
+							The website doesn't allow user to see the current product in
+							database after he registered on the website, after logging in
+							to the site , the user can access the product display page to
+							see their prices and how many pieces are currently available
+						</p>
+
+						<div class="categories">Web Development</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/Clothes-Online-Store">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-04 -->
+
+				<div id="modal-05" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/station2.jpg" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Weather station with alarme</h4>
+						<p>
+							Realization of a weather station with alarm based on Arduino
+							and RTC DS3231 which displays the physical atmospheric
+							quantities in a 16*2 LCD with an alarm adjustable by user.
+						</p>
+
+						<div class="categories">Arduino Project</div>
+					</div>
+
+					<div class="link-box">
+						<a href="http://www.behance.net">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-05 -->
+
+				<div id="modal-06" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/Leon.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Solar Tracker IOT</h4>
+						<p>
+							Proin gravida nibh vel velit auctor aliquet. Aenean
+							sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+							ipsum, nec sagittis sem nibh id elit.
+						</p>
+
+						<div class="categories">Arduino Project & Web Development</div>
+					</div>
+
+					<div class="link-box">
+						<a href="http://www.behance.net">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-06 -->
+				<!-- modal popups - end
+	            ============================================================= -->
 			</div>
-			<!-- /col-twelve -->
+			<!-- /portfolio-wrapper -->
+
+			<!-- More of My work Button -->
+			<!-- More of My work Button -->
 		</div>
-		<!-- /contact-form -->
-
-		<div class="row contact-info">
-			<div class="col-four tab-full">
-				<div class="icon">
-					<i class="icon-pin"></i>
-				</div>
-
-				<h5>Where to find me</h5>
-
-				<p>
-					Dr caid<br />
-					Harbil<br />
-					Marrakech , Maroc
-				</p>
-			</div>
-
-			<div class="col-four tab-full collapse">
-				<div class="icon">
-					<i class="icon-mail"></i>
-				</div>
-
-				<h5>Email Me At</h5>
-
-				<p>
-					harraoui.sohaib1@gmail.com<br />
-					sohaib.harraoui@usmba.ac.ma
-				</p>
-			</div>
-
-			<div class="col-four tab-full">
-				<div class="icon">
-					<i class="icon-phone"></i>
-				</div>
-
-				<h5>Call Me At</h5>
-
-				<p>Phone: +212 687 181086</p>
-			</div>
-		</div>
-		<!-- /contact-info -->
-	</section>
-	<!-- /contact -->
-
-	<!-- footer
-   ================================================== -->
-
-	<footer>
-		<div class="row">
-			<div class="col-six tab-full pull-right social">
-				<ul class="footer-social">
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/harraoui_sohaib/"><i class="fa fa-instagram"></i></a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="col-eight tab-full">
-				<div class="copyright">
-					<span>© Copyright 2023 </span>
-					<span>Design by
-						<a href="http://www.styleshout.com/">styleshout</a></span>
-					<span>Distributed by <a href="#intro">Me</a></span>
-				</div>
-			</div>
-
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-			</div>
-		</div>
-		<!-- /row -->
-	</footer>
-
-	<div id="preloader">
-		<div id="loader"></div>
+		<!-- /twelve -->
 	</div>
+	<!-- /portfolio-content -->
 
-	<!-- Java Script
+	<!-- more button -->
+	<div class="more-div">
+		<button><a href="{{ url_for('works') }}">More of My work</a></button>
+	</div>
+	<!-- end more -->
+</section>
+<!-- /portfolio -->
+
+<!-- contact
    ================================================== -->
-	<script src="../static/js/jquery-2.1.3.min.js"></script>
-	<script src="../static/js/plugins.js"></script>
-	<script src="../static/js/main.js"></script>
-</body>
+<section id="contact">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Contact</h5>
+			<h1>I'd Love To Hear From You.</h1>
 
-</html>
+			<p class="lead"></p>
+		</div>
+	</div>
+	<!-- /section-intro -->
+
+	<div class="row contact-form">
+		<div class="col-twelve">
+			<!-- form -->
+			<form name="contactForm" id="contactForm" method="post" action="">
+				<fieldset>
+					<div class="form-field">
+						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+							required="" />
+					</div>
+					<div class="form-field">
+						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" />
+					</div>
+					<div class="form-field">
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" />
+					</div>
+					<div class="form-field">
+						<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+							required=""></textarea>
+					</div>
+					<div class="form-field">
+						<button class="submitform">Submit</button>
+						<div id="submit-loader">
+							<div class="text-loader">Sending...</div>
+							<div class="s-loader">
+								<div class="bounce1"></div>
+								<div class="bounce2"></div>
+								<div class="bounce3"></div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<!-- Form End -->
+
+			<!-- contact-warning -->
+			<div id="message-warning"></div>
+			<!-- contact-success -->
+			<div id="message-success">
+				<i class="fa fa-check"></i>Your message was sent, thank you!<br />
+			</div>
+		</div>
+		<!-- /col-twelve -->
+	</div>
+	<!-- /contact-form -->
+
+	<div class="row contact-info">
+		<div class="col-four tab-full">
+			<div class="icon">
+				<i class="icon-pin"></i>
+			</div>
+
+			<h5>Where to find me</h5>
+
+			<p>
+				Dr caid<br />
+				Harbil<br />
+				Marrakech , Maroc
+			</p>
+		</div>
+
+		<div class="col-four tab-full collapse">
+			<div class="icon">
+				<i class="icon-mail"></i>
+			</div>
+
+			<h5>Email Me At</h5>
+
+			<p>
+				harraoui.sohaib1@gmail.com<br />
+				sohaib.harraoui@usmba.ac.ma
+			</p>
+		</div>
+
+		<div class="col-four tab-full">
+			<div class="icon">
+				<i class="icon-phone"></i>
+			</div>
+
+			<h5>Call Me At</h5>
+
+			<p>Phone: +212 687 181086</p>
+		</div>
+	</div>
+	<!-- /contact-info -->
+</section>
+<!-- /contact -->
+{% endblock %}
+
+{% block script %}
+{% endblock%}
