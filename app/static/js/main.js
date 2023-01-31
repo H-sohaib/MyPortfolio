@@ -165,7 +165,16 @@
 		nav.fadeOut();
 
 	});
-
+	// my edit
+	// show nav menu in windows resize if it initialie display: none
+	let WindowWidth;
+	$(window).resize(function () {
+		WindowWidth = $(window).width();
+		if (WindowWidth > 768) {
+			console.log(WindowWidth);
+			$(".main-navigation").css("display", "block")
+		}
+	})
 
 	/*---------------------------------------------------- */
 	/* Highlight the current section in the navigation bar

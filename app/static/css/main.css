@@ -1095,13 +1095,11 @@ header .row {
 	min-height: 66px;
 }
 header .top-bar {
-	display: block;
+	display: flex ;
+	justify-content: space-between ;
 	background: #000000;
 	min-width: 220px;
-	min-height: 66px;
-	position: absolute;
-	left: 90px;
-	top: 0;
+	min-height: 71px;
 }
 header .logo {
 	float: left;
@@ -1131,7 +1129,7 @@ header .logo a {
 	height: 40px;
 	margin-left: 20px;
 	margin-top: 13px;
-	display: block;
+	display: none;
 	position: relative;
 }
 .menu-toggle span {
@@ -1216,33 +1214,28 @@ header .logo a {
 
 /* navigation panel */
 #main-nav-wrap {
-	display: block;
-	width: 100%;
 	font-family: "poppins-medium", sans-serif;
 	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
+	padding-right: 20px;
 }
 
 /* dropdown nav */
 .main-navigation {
 	background: #000000;
-	padding: 24px 30px 42px;
+	padding: 20px 0px;
 	margin: 0;
 	width: 100%;
 	height: auto;
 	clear: both;
-	display: none;
 }
 .main-navigation > li {
-	display: block;
+	display: inline;
 	height: auto;
 	text-align: left;
-	padding: 0;
+	padding: 0px 5px;
 }
 .main-navigation li a {
-	display: block;
+	display: inline;
 	color: #FFFFFF;
 	width: auto;
 	padding: 15px 0;
@@ -1263,6 +1256,33 @@ header .logo a {
  * header styles
  * --------------------------------------------------------------- 
  */
+@media only screen and (max-width:768px) {
+	.main-navigation {
+		display: none;
+		padding: 24px 30px 42px;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	.main-navigation > li {
+		display: block;
+	}
+	.main-navigation li a {
+		display:  block;
+	}
+	#main-nav-wrap {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding-right: 0px;
+	}
+	header .top-bar {
+		display: block;
+	}
+}
+
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
