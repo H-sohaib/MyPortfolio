@@ -15,7 +15,7 @@ def home():
             subject,
             sender=app.config["MAIL_USERNAME"],
             recipients=['harraoui.sohaib1@gmail.com'])
-        msg.body = f'from name: {name} that have email: {email} send u this msg :\n   {message} '
+        msg.body = f'from name: <{name}> that have email:< {email} > send u this msg :\n   {message} '
         try:
             mail.send(msg)
             return "OK"
