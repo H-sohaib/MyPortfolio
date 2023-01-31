@@ -171,8 +171,9 @@
 	$(window).resize(function () {
 		WindowWidth = $(window).width();
 		if (WindowWidth > 768) {
-			console.log(WindowWidth);
 			$(".main-navigation").css("display", "block")
+		} else {
+			$(".main-navigation").css("display", "none")
 		}
 	})
 
