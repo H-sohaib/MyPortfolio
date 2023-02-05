@@ -1535,6 +1535,7 @@ header .logo a {
 
 .about-content {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	position: relative;
 	text-align: left;
