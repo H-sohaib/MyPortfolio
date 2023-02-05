@@ -24,14 +24,17 @@ def home():
     return render_template("index.html")
 
 
+@app.route('/download')
+def download():
+    try:
+        return send_from_directory(app.config["DOWNLOAD_PATH"], "myCV.pdf", as_attachment=True)
+    except FileNotFoundError:
+        abort(404)
+    except Exception as e:
+        print(e)
+        return "Internal Error 500 !"
+
+
 @app.route("/works")
 def works():
     return render_template("work.html")
-
-
-@app.route("/get/<filename>")
-def get(filename):
-    try:
-        return send_from_directory(app.config["donwload_path"], filename, as_attachment=True)
-    except FileNotFoundError:
-        abort(404)

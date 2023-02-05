@@ -4,7 +4,7 @@
 
 
 {% block links %}
-<link rel="icon" type="image/png" href="{{  url_for('static' , filename ='favicon.png')  }}" />
+
 {% endblock %}
 {% block style  %}
 <style>
@@ -97,10 +97,6 @@
 					<span>Student, Embedded Systems</span>
 				</li>
 				<li>
-					<strong>Website:</strong>
-					<span>www.kardswebsite.com</span>
-				</li>
-				<li>
 					<strong>Email:</strong>
 					<span>harraoui.sohaib1@gmail.com</span>
 				</li>
@@ -155,7 +151,7 @@
 	<div class="row button-section">
 		<div class="col-twelve">
 			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
-			<a href="{{ url_for('get' , filename = 'myCV.pdf') }}" title="Download CV" class="button button-primary">Download
+			<a href="{{ url_for( 'download' ) }}" title="Download CV" class="button button-primary">Download
 				CV</a>
 		</div>
 	</div>
@@ -367,8 +363,12 @@
 					<div class="timeline-content">
 						<h4>Solar Tracker IOT</h4>
 						<p>
-							Réalisation d’une suiveur de soleil à base Arduino et Ethernet
-							Sheild connecté au cayenne My devices
+							Realization of an IOT sun tracker with a photovoltaic panel based on Arduino and Ethernet Sheild connected
+							to
+							firebase database by a flask server and HTTP protocol, and the
+							visualization of the measured values by the tracker in a dashboard served by the same web server <br>
+							- front-end : HTML ,CSS ,JavaScript ,jQuery . <br>
+							- back-end : Python ( flask , SQLAlchemy ) , SQLite , firebase .
 						</p>
 					</div>
 				</div>
