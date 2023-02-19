@@ -2,6 +2,8 @@
 from app import app, mail
 from flask import render_template, send_from_directory, abort, request, Blueprint
 from flask_mail import Message
+import subprocess
+from time import sleep
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -25,10 +27,10 @@ def home():
     return render_template("index.html", page="index")
 
 
-@app.route('/download')
-def download():
+@app.route('/download/<file>')
+def download(file):
     try:
-        return send_from_directory(app.config["DOWNLOAD_PATH"], "myCV.pdf", as_attachment=True)
+        return send_from_directory(app.config["DOWNLOAD_PATH"], file, as_attachment=True)
     except FileNotFoundError:
         abort(404)
     except Exception as e:
@@ -39,14 +41,3 @@ def download():
 @app.route("/works")
 def works():
     return render_template("work.html")
-
-
-demo_bp = Blueprint('demo_bp', __name__)
-
-
-@demo_bp.route('/kasper')
-def kasper():
-    return 'hello fromm bp'
-
-
-app.register_blueprint(demo_bp, url_prefix='/demo')
