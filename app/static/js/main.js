@@ -141,42 +141,6 @@
 	});
 
 
-	/*-----------------------------------------------------*/
-	/* Navigation Menu
-   ------------------------------------------------------ */
-	var toggleButton = $('.menu-toggle'),
-		nav = $('.main-navigation');
-
-	// toggle button
-	toggleButton.on('click', function (e) {
-
-		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
-
-	});
-
-	// nav items
-	nav.find('li a').on("click", function () {
-
-		// update the toggle button 		
-		toggleButton.toggleClass('is-clicked');
-		// fadeout the navigation panel
-		// nav.fadeOut();
-
-	});
-	// my edit
-	// show nav menu in windows resize if it initialie display: none
-	let WindowWidth;
-	$(window).resize(function () {
-		WindowWidth = $(window).width();
-		if (WindowWidth > 768) {
-			$(".main-navigation").css("display", "block")
-		} else {
-			$(".main-navigation").css("display", "none")
-		}
-	})
-
 	/*---------------------------------------------------- */
 	/* Highlight the current section in the navigation bar
 	------------------------------------------------------ */

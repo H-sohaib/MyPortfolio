@@ -28,7 +28,7 @@
 	</style>
 	<!-- script
 		================================================== -->
-	<script src="../static/js/modernizr.js"></script>
+	<!-- <script src="../static/js/modernizr.js"></script> -->
 	<script src="../static/js/pace.min.js"></script>
 	{% block links %} {% endblock %}
 	{% block style  %} {% endblock %}
@@ -38,6 +38,7 @@
 <body id="top">
 	<!-- header 
    ================================================== -->
+	{% if page == "index" %}
 	<header>
 		<div class="">
 			<div class="top-bar">
@@ -71,7 +72,49 @@
 		</div>
 		<!-- /row -->
 	</header>
+	{% else %}
+	<header>
+		<div class="">
+			<div class="top-bar">
+				<div>
+					<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+					<p class="logo">
+						<a href="#">Menu</a>
+					</p>
+				</div>
+
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li>
+							<a class="smoothscroll" href="/#intro" title="">Home</a>
+						</li>
+						<li><a class="smoothscroll" href="/#about" title="">About</a></li>
+						<li>
+							<a class="smoothscroll" href="/#resume" title="">Resume</a>
+						</li>
+						<li>
+							<a class=smoothscroll"" href="/#portfolio" title="">Portfolio</a>
+						</li>
+						<li>
+							<a class="smoothscroll" href="/#contact" title="">Contact</a>
+						</li>
+						<li class="current">
+							<a class="smoothscroll" href="/#contact" title="">Works</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- /top-bar -->
+		</div>
+		<!-- /row -->
+	</header>
+	{% endif %}
 	<!-- /header -->
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
 	<div class="main-content">
 
 		{% block content %}
@@ -115,16 +158,49 @@
 		<!-- /row -->
 	</footer>
 
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
-
-
 	<!-- Java Script
    ================================================== -->
 	<script src="../static/js/jquery-2.1.3.min.js"></script>
 	<script src="../static/js/plugins.js"></script>
-	<script src="../static/js/main.js"></script>
+	<script>
+		/*-----------------------------------------------------*/
+		/* My edit
+   ------------------------------------------------------ */
+		// show nav menu in windows resize if it initialie display: none
+		let WindowWidth;
+		$(window).resize(function () {
+			WindowWidth = $(window).width();
+			if (WindowWidth > 768) {
+				$(".main-navigation").css("display", "block")
+			} else {
+				$(".main-navigation").css("display", "none")
+			}
+		})
+		/*-----------------------------------------------------*/
+		/* Navigation Menu
+   ------------------------------------------------------ */
+		var toggleButton = $('.menu-toggle'),
+			nav = $('.main-navigation');
+
+		// toggle button
+		toggleButton.on('click', function (e) {
+
+			e.preventDefault();
+			toggleButton.toggleClass('is-clicked');
+			nav.slideToggle();
+
+		});
+
+		// nav items
+		nav.find('li a').on("click", function () {
+
+			// update the toggle button 		
+			toggleButton.toggleClass('is-clicked');
+			// fadeout the navigation panel
+			nav.fadeOut();
+
+		});
+	</script>
 	{% block script %} {% endblock%}
 </body>
 

@@ -1,5 +1,6 @@
+# from app import demo_bp
 from app import app, mail
-from flask import render_template, send_from_directory, abort, request
+from flask import render_template, send_from_directory, abort, request, Blueprint
 from flask_mail import Message
 
 
@@ -21,7 +22,7 @@ def home():
             return "OK"
         except Exception as e:
             print(f"ther is a execption : {e} ")
-    return render_template("index.html")
+    return render_template("index.html", page="index")
 
 
 @app.route('/download')
@@ -38,3 +39,14 @@ def download():
 @app.route("/works")
 def works():
     return render_template("work.html")
+
+
+demo_bp = Blueprint('demo_bp', __name__)
+
+
+@demo_bp.route('/kasper')
+def kasper():
+    return 'hello fromm bp'
+
+
+app.register_blueprint(demo_bp, url_prefix='/demo')

@@ -3,6 +3,7 @@ class Config(object):
     TESTING = False
     SECRET_KEY = "jigqibcuqouqqbv"
     DOWNLOAD_PATH = "E:/WorkDir/MyPortfolio/app/static/sendFiles"
+    # DOWNLOAD_PATH = "/home/HarraouiSohaib/MyPortfolio/app/static/sendFiles"
     # mail config
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 465

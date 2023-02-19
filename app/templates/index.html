@@ -13,6 +13,14 @@
 		justify-content: center;
 		margin-top: 70px;
 	}
+
+	.button-section a:hover {
+		color: #cc005f;
+	}
+
+	.more-div a:hover button {
+		color: #cc005f;
+	}
 </style>
 {% endblock %}
 
@@ -128,6 +136,10 @@
 					<strong>JavaScript</strong>
 				</li>
 				<li>
+					<div class="progress percent60"><span>60%</span></div>
+					<strong>jQuery</strong>
+				</li>
+				<li>
 					<div class="progress percent65"><span>65%</span></div>
 					<strong>Flask</strong>
 				</li>
@@ -138,6 +150,10 @@
 				<li>
 					<div class="progress percent60"><span>60%</span></div>
 					<strong>Firebase</strong>
+				</li>
+				<li>
+					<div class="progress percent50"><span>50%</span></div>
+					<strong>git & github</strong>
 				</li>
 				<li>
 					<div class="progress percent80"><span>80%</span></div>
@@ -151,8 +167,8 @@
 	<div class="row button-section">
 		<div class="col-twelve">
 			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
-			<a href="{{ url_for( 'download' ) }}" title="Download CV" class="button button-primary">Download
-				CV</a>
+			<a href="{{ url_for( 'download' ) }}" title="Download CV" class="button button-primary">
+				Download CV</a>
 		</div>
 	</div>
 </section>
@@ -343,8 +359,8 @@
 					<div class="timeline-content">
 						<h4>Web site for the sale of clothes</h4>
 						<p>
-							front-end : HTML , CSS , Bootstrap , JavaScript <br />
-							back-end : Python ( Flask , SQLAlchemy ) , SQLite
+							<strong>front-end</strong> : HTML , CSS , Bootstrap , JavaScript <br />
+							<strong>back-end</strong> : Python ( Flask , SQLAlchemy ) , SQLite
 						</p>
 					</div>
 				</div>
@@ -363,12 +379,15 @@
 					<div class="timeline-content">
 						<h4>Solar Tracker IOT</h4>
 						<p>
-							Realization of an IOT sun tracker with a photovoltaic panel based on Arduino and Ethernet Sheild connected
-							to
-							firebase database by a flask server and HTTP protocol, and the
-							visualization of the measured values by the tracker in a dashboard served by the same web server <br>
-							- front-end : HTML ,CSS ,JavaScript ,jQuery . <br>
-							- back-end : Python ( flask , SQLAlchemy ) , SQLite , firebase .
+							Realization of an IOT Solar Tracker with a photovoltaic panel based
+							on Arduino and Ethernet Sheild connected
+							to firebase database by a flask server and HTTP protocol, and the
+							visualization of the values measured by the
+							tracker in a dashboard served by the same web server. <br>
+							<strong>Hardware</strong> : Arduino , Arduino Ethernet Shield <br>
+							<strong>front-end</strong> : HTML , CSS , JavaScript , jQuery <br>
+							<strong>back-end</strong> : Python ( Flask ) , Firebase , SQLite <br>
+							<strong>Protocole de com</strong> : HTTP
 						</p>
 					</div>
 				</div>
@@ -397,8 +416,23 @@
 
 	<div class="row portfolio-content">
 		<div class="col-twelve">
-			<!-- portfolio-wrapper -->
 			<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+				<!-- portfolio-wrapper -->
+				<!-- Solar Tracker -->
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/pfe.png" alt="pfe" />
+						<a href="#modal-06" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Solar Tracker IOT</h3>
+									<span class="folio-types"> PFE Project </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- kasper -->
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="../static/images/portfolio/kasper.png" alt="kasper" />
@@ -414,8 +448,35 @@
 						</a>
 					</div>
 				</div>
-				<!-- /folio-item -->
-
+				<!-- Weather station -->
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/station1.jpg" alt="station" />
+						<a href="#modal-05" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Weather station with alarme</h3>
+									<span class="folio-types"> Arduino Project </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- Task App with Flask -->
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="../static/images/portfolio/TaskAppFlask.png" alt="station" />
+						<a href="#modal-08" class="overlay">
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Task APP with Flask</h3>
+									<span class="folio-types"> Web Application </span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- Bondi -->
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="../static/images/portfolio/Bondi.png" alt="Bondi" />
@@ -431,8 +492,7 @@
 						</a>
 					</div>
 				</div>
-				<!-- /folio-item -->
-
+				<!-- Leon -->
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="../static/images/portfolio/Leon.png" alt="Leon" />
@@ -448,12 +508,11 @@
 						</a>
 					</div>
 				</div>
-				<!-- /folio-item -->
-
+				<!-- clothe Online store -->
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="../static/images/portfolio/store.png" alt="Store" />
-						<a href="#modal-07" class="overlay">
+						<a href="#modal-04" class="overlay">
 							<div class="folio-item-table">
 								<div class="folio-item-cell">
 									<h3 class="folio-title">Clothes Online Store</h3>
@@ -463,8 +522,7 @@
 						</a>
 					</div>
 				</div>
-				<!-- /folio-item -->
-
+				<!-- task app local -->
 				<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<img src="../static/images/portfolio/TaskApp.jpg" alt="Store" />
@@ -478,40 +536,12 @@
 						</a>
 					</div>
 				</div>
-				<!-- /folio-item -->
 
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/station1.jpg" alt="station" />
-						<a href="#modal-05" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Weather station with alarme</h3>
-									<span class="folio-types"> Arduino Project </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- /folio-item -->
 
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/pfe.png" alt="pfe" />
-						<a href="#modal-06" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Solar Tracker IOT</h3>
-									<span class="folio-types"> PFE Project </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- /folio-item -->
 
 				<!-- modal popups - begin
 	            ============================================================= -->
+				<!-- kasper modal -->
 				<div id="modal-01" class="popup-modal slider mfp-hide">
 					<div class="media">
 						<img src="../static/images/portfolio/kasper.png" alt="" />
@@ -520,13 +550,13 @@
 					<div class="description-box">
 						<h4>Kasper Design</h4>
 						<p>
-							I code the kasper Design with HTML5 & CSS3 and pure JavaScript
-							with no front-end framework ,also i add a back-end app to
-							template with a flask framework
+							I code the Kasper Design with HTML5 & CSS3 and Vanilla JavaScript
+							with no front-end framework, also I add a back-end app to template
+							with a flask framework and SQLite to make it reusable .
 						</p>
 
 						<div class="categories">Web Development</div>
-						<div class="categories">Click details for live demo</div>
+						<div class="categories"><a href="">Click details for live demo</a></div>
 					</div>
 
 					<div class="link-box">
@@ -535,7 +565,7 @@
 					</div>
 				</div>
 				<!-- /modal-01 -->
-
+				<!-- bondi -->
 				<div id="modal-02" class="popup-modal slider mfp-hide">
 					<div class="media">
 						<img src="../static/images/portfolio/Bondi.png" alt="" />
@@ -544,11 +574,13 @@
 					<div class="description-box">
 						<h4>Bondi Template</h4>
 						<p>
-							this template based on Bootsrup 5 , HTML5 , some CSS3 and
-							JavaScript for add a filter of blog
+							This template based on Bootstrap 5, HTML5, some CSS3 and
+							JavaScript to add a filter feature of the blog.
 						</p>
 
 						<div class="categories">Front-end Development</div>
+						<div class="categories"><a href="https://h-sohaib.github.io/Bondi-Template/">Click details for live demo</a>
+						</div>
 					</div>
 
 					<div class="link-box">
@@ -557,7 +589,7 @@
 					</div>
 				</div>
 				<!-- /modal-02 -->
-
+				<!-- Leon -->
 				<div id="modal-03" class="popup-modal slider mfp-hide">
 					<div class="media">
 						<img src="../static/images/portfolio/Leon.png" alt="" />
@@ -566,11 +598,13 @@
 					<div class="description-box">
 						<h4>Leon Template</h4>
 						<p>
-							Simple Template coded with pure HTML & CSS with a few line of
-							JavaScript for button menu fonctionnality
+							Simple template encoded with HTML & CSS with few lines
+							of JavaScript for the button menu feature.
 						</p>
 
 						<div class="categories">Front-end Development</div>
+						<div class="categories"><a href="https://h-sohaib.github.io/Leon-Template/">Click details for live demo</a>
+						</div>
 					</div>
 
 					<div class="link-box">
@@ -579,7 +613,7 @@
 					</div>
 				</div>
 				<!-- /modal-03 -->
-
+				<!-- Clothes Online -->
 				<div id="modal-04" class="popup-modal slider mfp-hide">
 					<div class="media">
 						<img src="../static/images/portfolio/store.png" alt="" />
@@ -603,28 +637,7 @@
 					</div>
 				</div>
 				<!-- /modal-04 -->
-				<div id="modal-07" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/TaskApp.jpg" alt="" />
-					</div>
-
-					<div class="description-box">
-						<h4>Task App with LocalStorage</h4>
-						<p>
-							A task application with add and delete tasks with a LocalStorage feature to store
-							tasks permanently. Even the page reloaded
-						</p>
-
-						<div class="categories">Web Development</div>
-					</div>
-
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Task_app">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-07 -->
-
+				<!-- Weather station  -->
 				<div id="modal-05" class="popup-modal slider mfp-hide">
 					<div class="media">
 						<img src="../static/images/portfolio/station2.jpg" alt="" />
@@ -647,18 +660,19 @@
 					</div>
 				</div>
 				<!-- /modal-05 -->
-
+				<!-- Solar Tracker -->
 				<div id="modal-06" class="popup-modal slider mfp-hide">
 					<div class="media">
-						<img src="../static/images/portfolio/Leon.png" alt="" />
+						<img src="../static/images/portfolio/pfe.png" alt="" />
 					</div>
 
 					<div class="description-box">
 						<h4>Solar Tracker IOT</h4>
 						<p>
-							Proin gravida nibh vel velit auctor aliquet. Aenean
-							sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-							ipsum, nec sagittis sem nibh id elit.
+							Realization of an IOT Solar Tracker with a photovoltaic panel based
+							on Arduino and Ethernet Sheild connected
+							to firebase database by a flask server and HTTP protocol, and the
+							visualization of the values measured by the
 						</p>
 
 						<div class="categories">Arduino Project & Web Development</div>
@@ -670,13 +684,57 @@
 					</div>
 				</div>
 				<!-- /modal-06 -->
+				<!-- Task app Local -->
+				<div id="modal-07" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/TaskApp.jpg" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Task App with LocalStorage</h4>
+						<p>
+							A task application with add and delete tasks with a LocalStorage feature to store
+							tasks permanently. Even the page reloaded
+						</p>
+
+						<div class="categories">Web Development</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/Task_app">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-07 -->
+				<!-- Task app wit FLASK -->
+				<div id="modal-08" class="popup-modal slider mfp-hide">
+					<div class="media">
+						<img src="../static/images/portfolio/TaskAppFlask.png" alt="" />
+					</div>
+
+					<div class="description-box">
+						<h4>Task APP with Flask</h4>
+						<p>
+							Task App with feature of add, remove, mark completed tasks.
+							Tasks are stored in SQLite DB, the app interacts with the DB
+							via Ajax Requests in the background .
+						</p>
+
+						<div class="categories">Web Application</div>
+					</div>
+
+					<div class="link-box">
+						<a href="https://github.com/H-sohaib/TaskApp_jQuery.git">Details</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div>
+				<!-- /modal-07 -->
+
 				<!-- modal popups - end
 	            ============================================================= -->
 			</div>
 			<!-- /portfolio-wrapper -->
 
-			<!-- More of My work Button -->
-			<!-- More of My work Button -->
 		</div>
 		<!-- /twelve -->
 	</div>
@@ -684,7 +742,7 @@
 
 	<!-- more button -->
 	<div class="more-div">
-		<button><a href="{{ url_for('works') }}">More of My work</a></button>
+		<a href="{{ url_for('works') }}"><button>More of My work</button></a>
 	</div>
 	<!-- end more -->
 </section>
@@ -792,4 +850,6 @@
 {% endblock %}
 
 {% block script %}
+<script src="../static/js/main.js"></script>
+
 {% endblock%}
