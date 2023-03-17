@@ -21,6 +21,10 @@
 	.more-div a:hover button {
 		color: #cc005f;
 	}
+	.cert{
+		font-weight: bold;
+		margin-top: -10px;
+	}
 </style>
 {% endblock %}
 
@@ -261,27 +265,29 @@
 
 					<div class="timeline-content">
 						<h4>Become a Software Developer : 30 hours 26 min</h4>
+						<div class="categories cert"><a href="{{ url_for( 'download' ,file='linkedinCertificate.jpg' ) }}">View certificate</a></div>
 						<p>
 							Top skills covered : <br />
 							Full-Stack Development, JavaScript, Software Development, Web
 							Design, Front-End Development
 						</p>
+						
 					</div>
-				</div>
-				<!-- /timeline-block -->
-
+					<!-- /timeline-block -->
+					
 				<div class="timeline-block">
 					<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
 					</div>
-
+					
 					<div class="timeline-header">
 						<h3>Orange Digital Center Rabat certifies</h3>
 						<p></p>
 					</div>
-
+					
 					<div class="timeline-content">
 						<h4>Microcontrôleurs & IoT</h4>
+						<div class="categories cert"><a href="{{ url_for( 'download' ,file='OrangeCertificate.jpg' ) }}">View certificate</a></div>
 						<p>
 							Has actively participate in
 							<strong>Microcontrôleurs & IoT</strong> training organised by

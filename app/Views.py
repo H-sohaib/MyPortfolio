@@ -1,6 +1,6 @@
 # from app import demo_bp
 from app import app, mail
-from flask import render_template, send_from_directory, abort, request, Blueprint, redirect
+from flask import render_template, send_from_directory, request, url_for
 from flask_mail import Message
 import subprocess
 from time import sleep
@@ -31,7 +31,12 @@ def home():
 @app.route('/download/<file>')
 def download(file):
     try:
-        return send_from_directory(app.config["DOWNLOAD_PATH"], file, as_attachment=True)
+        if file in ["linkedinCertificate.jpg", "OrangeCertificate.jpg"]:
+            path = url_for("static", filename=f"sendFiles/{file}")
+            return render_template("sendImg.html",  path=path, file=file.split(".")[0])
+        else:
+            return send_from_directory(app.config["DOWNLOAD_PATH"], file, as_attachment=True)
+
     except FileNotFoundError:
         abort(404)
     except Exception as e:
