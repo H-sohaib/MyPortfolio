@@ -1,868 +1,930 @@
-{% extends "base.html" %}
-
-{% block title  %} Harraoui Sohaib {% endblock %}
-
-
-{% block links %}
-
-{% endblock %}
-{% block style  %}
+{% extends "base.html" %} {% block title %} Harraoui Sohaib {% endblock %} {%
+block links %} {% endblock %} {% block style %}
 <style>
-	.more-div {
-		display: flex;
-		justify-content: center;
-		margin-top: 70px;
-	}
+  .more-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
 
-	.button-section a:hover {
-		color: #cc005f;
-	}
+  .button-section a:hover {
+    color: #cc005f;
+  }
 
-	.more-div a:hover button {
-		color: #cc005f;
-	}
-	.cert{
-		font-weight: bold;
-		margin-top: -10px;
-	}
+  .more-div a:hover button {
+    color: #cc005f;
+  }
+  .cert {
+    font-weight: bold;
+    margin-top: -10px;
+  }
 </style>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <!-- intro section
    ================================================== -->
 <section id="intro">
-	<div class="intro-overlay"></div>
+  <div class="intro-overlay"></div>
 
-	<div class="intro-content">
-		<div class="row">
-			<div class="col-twelve">
-				<h5>Hello, World.</h5>
-				<h1>I'm Harraoui Sohaib.</h1>
+  <div class="intro-content">
+    <div class="row">
+      <div class="col-twelve">
+        <h5>Hello, World.</h5>
+        <h1>I'm Harraoui Sohaib.</h1>
 
-				<p class="intro-position">
-					<span>Embedded Systems Student</span>
-					<span>Web Developer</span>
-				</p>
+        <p class="intro-position">
+          <span>Embedded Systems Student</span>
+          <span>Web Developer</span>
+        </p>
 
-				<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-			</div>
-		</div>
-	</div>
-	<!-- /intro-content -->
+        <a class="button stroke smoothscroll" href="#about" title=""
+          >More About Me</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /intro-content -->
 
-	<ul class="intro-social">
-		<li>
-			<a href="https://www.linkedin.com/in/harraoui-sohaib-89849b246/"><i class="fa fa-linkedin"></i></a>
-		</li>
-		<li>
-			<a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
-		</li>
-		<li>
-			<a href="https://www.instagram.com/harraoui_sohaib/"><i class="fa fa-instagram"></i></a>
-		</li>
-	</ul>
-	<!-- /intro-social -->
+  <ul class="intro-social">
+    <li>
+      <a href="https://www.linkedin.com/in/harraoui-sohaib-89849b246/"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+    </li>
+    <li>
+      <a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/harraoui_sohaib/"
+        ><i class="fa fa-instagram"></i
+      ></a>
+    </li>
+  </ul>
+  <!-- /intro-social -->
 </section>
 <!-- /intro -->
 
 <!-- about section
    ================================================== -->
 <section id="about">
-	<div class="row section-intro">
-		<div class="col-twelve">
-			<h5>About</h5>
-			<h1>Let me introduce myself.</h1>
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>About</h5>
+      <h1>Let me introduce myself.</h1>
 
-			<div class="intro-info">
-				<img src="../static/images/profile-pic.jpg" alt="Profile Picture" />
+      <div class="intro-info">
+        <img src="../static/images/profile-pic.jpg" alt="Profile Picture" />
 
-				<p class="lead"></p>
-			</div>
-		</div>
-	</div>
-	<!-- /section-intro -->
+        <p class="lead"></p>
+      </div>
+    </div>
+  </div>
+  <!-- /section-intro -->
 
-	<div class="row about-content">
-		<div class="col-six tab-full">
-			<h3>Profile</h3>
-			<p>
-				I am very motivated and ambitious, also very passionate about
-				technology. I love bugs and making things work and learning about
-				technologies And how things are working. I have acquired a solid
-				knowledge of the fundamentals of the web and embedded systems
-				through self-study and my academic background and I am currently
-				looking for a new experience to practice my knowledge.
-			</p>
+  <div class="row about-content">
+    <div class="col-six tab-full">
+      <h3>Profile</h3>
+      <p>
+        I am very motivated and ambitious, also very passionate about
+        technology. I love bugs and making things work and learning about
+        technologies And how things are working. I have acquired a solid
+        knowledge of the fundamentals of the web and embedded systems through
+        self-study and my academic background and I am currently looking for a
+        new experience to practice my knowledge.
+      </p>
 
-			<ul class="info-list">
-				<li>
-					<strong>Fullname:</strong>
-					<span>Haraaoui Sohaib</span>
-				</li>
-				<li>
-					<strong>Birth Date:</strong>
-					<span>May 21, 2003</span>
-				</li>
-				<li>
-					<strong>Job:</strong>
-					<span>Student, Embedded Systems</span>
-				</li>
-				<li>
-					<strong>Email:</strong>
-					<span>harraoui.sohaib1@gmail.com</span>
-				</li>
-			</ul>
-			<!-- /info-list -->
-		</div>
+      <ul class="info-list">
+        <li>
+          <strong>Fullname:</strong>
+          <span>Haraaoui Sohaib</span>
+        </li>
+        <li>
+          <strong>Birth Date:</strong>
+          <span>May 21, 2003</span>
+        </li>
+        <li>
+          <strong>Job:</strong>
+          <span>Student, Embedded Systems</span>
+        </li>
+        <li>
+          <strong>Email:</strong>
+          <span>harraoui.sohaib1@gmail.com</span>
+        </li>
+      </ul>
+      <!-- /info-list -->
+    </div>
 
-		<div class="col-six tab-full">
-			<h3>Skills</h3>
-			<!-- <p>Lorem ipsum Qui veniam ut consequat ex
+    <div class="col-six tab-full">
+      <h3>Skills</h3>
+      <!-- <p>Lorem ipsum Qui veniam ut consequat ex
 				ullamco nulla in non ut esse in magna sint minim officia
 				consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
 
-			<ul class="skill-bars">
-				<li>
-					<div class="progress percent60"><span>60%</span></div>
-					<strong>HTML5</strong>
-				</li>
-				<li>
-					<div class="progress percent70"><span>70%</span></div>
-					<strong>CSS3</strong>
-				</li>
-				<li>
-					<div class="progress percent60"><span>60%</span></div>
-					<strong>Bootstrap</strong>
-				</li>
-				<li>
-					<div class="progress percent55"><span>55%</span></div>
-					<strong>JavaScript</strong>
-				</li>
-				<li>
-					<div class="progress percent60"><span>60%</span></div>
-					<strong>jQuery</strong>
-				</li>
-				<li>
-					<div class="progress percent65"><span>65%</span></div>
-					<strong>Flask</strong>
-				</li>
-				<li>
-					<div class="progress percent55"><span>55%</span></div>
-					<strong>SQlite,MySQL</strong>
-				</li>
-				<li>
-					<div class="progress percent60"><span>60%</span></div>
-					<strong>Firebase</strong>
-				</li>
-				<li>
-					<div class="progress percent50"><span>50%</span></div>
-					<strong>git & github</strong>
-				</li>
-				<li>
-					<div class="progress percent80"><span>80%</span></div>
-					<strong>Arduino & Embedded c++</strong>
-				</li>
-			</ul>
-			<!-- /skill-bars -->
-		</div>
-	</div>
+      <ul class="skill-bars">
+        <li>
+          <div class="progress percent60"><span>60%</span></div>
+          <strong>HTML5</strong>
+        </li>
+        <li>
+          <div class="progress percent70"><span>70%</span></div>
+          <strong>CSS3</strong>
+        </li>
+        <li>
+          <div class="progress percent60"><span>60%</span></div>
+          <strong>Bootstrap</strong>
+        </li>
+        <li>
+          <div class="progress percent55"><span>55%</span></div>
+          <strong>JavaScript</strong>
+        </li>
+        <li>
+          <div class="progress percent60"><span>60%</span></div>
+          <strong>jQuery</strong>
+        </li>
+        <li>
+          <div class="progress percent65"><span>65%</span></div>
+          <strong>Flask</strong>
+        </li>
+        <li>
+          <div class="progress percent55"><span>55%</span></div>
+          <strong>SQlite,MySQL</strong>
+        </li>
+        <li>
+          <div class="progress percent60"><span>60%</span></div>
+          <strong>Firebase</strong>
+        </li>
+        <li>
+          <div class="progress percent50"><span>50%</span></div>
+          <strong>git & github</strong>
+        </li>
+        <li>
+          <div class="progress percent80"><span>80%</span></div>
+          <strong>Arduino & Embedded c++</strong>
+        </li>
+      </ul>
+      <!-- /skill-bars -->
+    </div>
+  </div>
 
-	<div class="row button-section">
-		<div class="col-twelve">
-			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
-			<a href="{{ url_for( 'download' ,file='myCV_V2.0.pdf' ) }}" title="Download CV" class="button button-primary">
-				Download CV</a>
-		</div>
-	</div>
+  <div class="row button-section">
+    <div class="col-twelve">
+      <!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
+      <a
+        href="{{ url_for( 'download' ,file='myCV_V2.0.pdf' ) }}"
+        title="Download CV"
+        class="button button-primary"
+      >
+        Download CV</a
+      >
+    </div>
+  </div>
 </section>
 <!-- /process-->
 
-<!-- resume Section
+<!-- resume Section 
    ================================================== -->
 <section id="resume" class="grey-section">
-	<div class="row section-intro">
-		<div class="col-twelve">
-			<h5>Resume</h5>
-			<h1>More of my credentials.</h1>
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Resume</h5>
+      <h1>More of my credentials.</h1>
 
-			<!-- <p class="lead">Lorem ipsum Do commodo
+      <!-- <p class="lead">Lorem ipsum Do commodo
 					 in proident enim in dolor cupidatat adipisicing
 					  dolore officia nisi aliqua incididunt Ut veniam
 						 lorem ipsum Consectetur ut in in eu do.</p> -->
-		</div>
-	</div>
-	<!-- /section-intro-->
+    </div>
+  </div>
+  <!-- /section-intro-->
 
-	<div class="row resume-timeline">
-		<div class="col-twelve resume-header">
-			<h2>Education</h2>
-		</div>
-		<!-- /resume-header -->
+  <div class="row resume-timeline">
+    <div class="col-twelve resume-header">
+      <h2>Education</h2>
+    </div>
+    <!-- /resume-header -->
 
-		<div class="col-twelve">
-			<div class="timeline-wrap">
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
+    <div class="col-twelve">
+      <div class="timeline-wrap">
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>DUT-Embedded Systems</h3>
-						<p>September 2021 - 2023</p>
-					</div>
+          <div class="timeline-header">
+            <h3>DUT-Embedded Systems</h3>
+            <p>September 2021 - 2023</p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>
-							University Sidi Mohamed Ben Abdellah Higher School of
-							technology (EST) - Fes
-						</h4>
-						<p>Major of S2 & S3</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
+          <div class="timeline-content">
+            <h4>
+              University Sidi Mohamed Ben Abdellah Higher School of technology
+              (EST) - Fes
+            </h4>
+            <p>Major of S2 & S3</p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
 
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>Professional Baccalaureat - Elect - Equi - Com</h3>
-						<p>september 2018 - 2021</p>
-					</div>
+          <div class="timeline-header">
+            <h3>Professional Baccalaureat - Elect - Equi - Com</h3>
+            <p>september 2018 - 2021</p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>Tamansourte Highschool - Marrakech</h4>
-						<p>Major professional baccalaureate at regional level</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
-			</div>
-			<!-- /timeline-wrap -->
-		</div>
-		<!-- /col-twelve -->
-	</div>
-	<!-- /resume-timeline -->
-	<!-- Certifact section -->
-	<div class="row resume-timeline">
-		<div class="col-twelve resume-header">
-			<h2>Certificat</h2>
-		</div>
-		<!-- /resume-header -->
+          <div class="timeline-content">
+            <h4>Tamansourte Highschool - Marrakech</h4>
+            <p>Major professional baccalaureate at regional level</p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
+      </div>
+      <!-- /timeline-wrap -->
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /resume-timeline -->
+  <!-- Certifact section -->
+  <div class="row resume-timeline">
+    <div class="col-twelve resume-header">
+      <h2>Certificat</h2>
+    </div>
+    <!-- /resume-header -->
 
-		<div class="col-twelve">
-			<div class="timeline-wrap">
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
+    <div class="col-twelve">
+      <div class="timeline-wrap">
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>LinkedIn Learning</h3>
-						<p>Jul 29 , 2022</p>
-					</div>
+          <div class="timeline-header">
+            <h3>LinkedIn Learning</h3>
+            <p>Jul 29 , 2022</p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>Become a Software Developer : 30 hours 26 min</h4>
-						<div class="categories cert"><a href="{{ url_for( 'download' ,file='linkedinCertificate.jpg' ) }}">View certificate</a></div>
-						<p>
-							Top skills covered : <br />
-							Full-Stack Development, JavaScript, Software Development, Web
-							Design, Front-End Development
-						</p>
-						
-					</div>
-					<!-- /timeline-block -->
-					
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-					
-					<div class="timeline-header">
-						<h3>Orange Digital Center Rabat certifies</h3>
-						<p></p>
-					</div>
-					
-					<div class="timeline-content">
-						<h4>Microcontrôleurs & IoT</h4>
-						<div class="categories cert"><a href="{{ url_for( 'download' ,file='OrangeCertificate.jpg' ) }}">View certificate</a></div>
-						<p>
-							Has actively participate in
-							<strong>Microcontrôleurs & IoT</strong> training organised by
-							Orange Digital Center Rabat.
-						</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
-			</div>
-			<!-- /timeline-wrap -->
-		</div>
-		<!-- /col-twelve -->
-	</div>
-	<!-- /resume-timeline -->
+          <div class="timeline-content">
+            <h4>Become a Software Developer : 30 hours 26 min</h4>
+            <div class="categories cert">
+              <a
+                href="{{ url_for( 'download' ,file='linkedinCertificate.jpg' ) }}"
+                >Click to view certificate</a
+              >
+            </div>
+            <p>
+              Top skills covered : <br />
+              Full-Stack Development, JavaScript, Software Development, Web
+              Design, Front-End Development
+            </p>
+          </div>
+          <!-- /timeline-block -->
 
-	<div class="row resume-timeline">
-		<div class="col-twelve resume-header">
-			<h2>Professional Experience</h2>
-		</div>
-		<!-- /resume-header -->
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
 
-		<div class="col-twelve">
-			<div class="timeline-wrap">
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+            <div class="timeline-header">
+              <h3>Orange Digital Center Rabat certifies</h3>
+              <p></p>
+            </div>
 
-					<div class="timeline-header">
-						<h3>Initialsation Training</h3>
-						<p>1 mount</p>
-					</div>
+            <div class="timeline-content">
+              <h4>Microcontrôleurs & IoT</h4>
+              <div class="categories cert">
+                <a
+                  href="{{ url_for( 'download' ,file='OrangeCertificate.jpg' ) }}"
+                  >Click to view certificate</a
+                >
+              </div>
+              <p>
+                Has actively participate in
+                <strong>Microcontrôleurs & IoT</strong> training organised by
+                Orange Digital Center Rabat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /timeline-block -->
+      </div>
+      <!-- /timeline-wrap -->
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /resume-timeline -->
 
-					<div class="timeline-content">
-						<h4>SO SYSTEME</h4>
-						<p>
-							Installation of surveillance cameras around the company's
-							workshops
-						</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
+  <div class="row resume-timeline">
+    <div class="col-twelve resume-header">
+      <h2>Professional Experience</h2>
+    </div>
+    <!-- /resume-header -->
 
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+    <div class="col-twelve">
+      <div class="timeline-wrap">
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>Mini-Projet</h3>
-						<p></p>
-					</div>
+          <div class="timeline-header">
+            <h3>Initialsation Training</h3>
+            <p>1 mount</p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>Weather station with alarme</h4>
-						<p>
-							Realization of a weather station with alarm based on Arduino
-							and RTC DS3231 which displays the physical atmospheric
-							quantities in a 16*2 LCD with an alarm adjustable by user.
-						</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
+          <div class="timeline-content">
+            <h4>SO SYSTEME</h4>
+            <p>
+              Installation of surveillance cameras around the company's
+              workshops
+            </p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
 
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>Mini-Projet</h3>
-						<p></p>
-					</div>
+          <div class="timeline-header">
+            <h3>Mini-Projet</h3>
+            <p></p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>Web site for the sale of clothes</h4>
-						<p>
-							<strong>front-end</strong> : HTML , CSS , Bootstrap , JavaScript <br />
-							<strong>back-end</strong> : Python ( Flask , SQLAlchemy ) , SQLite
-						</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
+          <div class="timeline-content">
+            <h4>Weather station with alarme</h4>
+            <p>
+              Realization of a weather station with alarm based on Arduino and
+              RTC DS3231 which displays the physical atmospheric quantities in a
+              16*2 LCD with an alarm adjustable by user.
+            </p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
 
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
 
-					<div class="timeline-header">
-						<h3>Projet PFE</h3>
-						<p></p>
-					</div>
+          <div class="timeline-header">
+            <h3>Mini-Projet</h3>
+            <p></p>
+          </div>
 
-					<div class="timeline-content">
-						<h4>Solar Tracker IOT</h4>
-						<p>
-							Realization of an IOT Solar Tracker with a photovoltaic panel based
-							on Arduino and Ethernet Sheild connected
-							to firebase database by a flask server and HTTP protocol, and the
-							visualization of the values measured by the
-							tracker in a dashboard served by the same web server. <br>
-							<strong>Hardware</strong> : Arduino , Arduino Ethernet Shield <br>
-							<strong>front-end</strong> : HTML , CSS , JavaScript , jQuery <br>
-							<strong>back-end</strong> : Python ( Flask ) , Firebase , SQLite <br>
-							<strong>Protocole de com</strong> : HTTP
-						</p>
-					</div>
-				</div>
-				<!-- /timeline-block -->
-			</div>
-			<!-- /timeline-wrap -->
-		</div>
-		<!-- /col-twelve -->
-	</div>
-	<!-- /resume-timeline -->
+          <div class="timeline-content">
+            <h4>Web site for the sale of clothes</h4>
+            <p>
+              <strong>front-end</strong> : HTML , CSS , Bootstrap , JavaScript
+              <br />
+              <strong>back-end</strong> : Python ( Flask , SQLAlchemy ) , SQLite
+            </p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>Projet PFE</h3>
+            <p></p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Solar Tracker IOT</h4>
+            <p>
+              Realization of an IOT Solar Tracker with a photovoltaic panel
+              based on Arduino and Ethernet Sheild connected to firebase
+              database by a flask server and HTTP protocol, and the
+              visualization of the values measured by the tracker in a dashboard
+              served by the same web server. <br />
+              <strong>Hardware</strong> : Arduino , Arduino Ethernet Shield
+              <br />
+              <strong>front-end</strong> : HTML , CSS , JavaScript , jQuery
+              <br />
+              <strong>back-end</strong> : Python ( Flask ) , Firebase , SQLite
+              <br />
+              <strong>Protocole de com</strong> : HTTP
+            </p>
+          </div>
+        </div>
+        <!-- /timeline-block -->
+      </div>
+      <!-- /timeline-wrap -->
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /resume-timeline -->
 </section>
 <!-- /features -->
 
 <!-- Portfolio Section
    ================================================== -->
 <section id="portfolio">
-	<div class="row section-intro">
-		<div class="col-twelve">
-			<h5>Portfolio</h5>
-			<h1>Check Out Some of My Works.</h1>
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Portfolio</h5>
+      <h1>Check Out Some of My Works.</h1>
 
-			<p class="lead"></p>
-		</div>
-	</div>
-	<!-- /section-intro-->
+      <p class="lead"></p>
+    </div>
+  </div>
+  <!-- /section-intro-->
 
-	<div class="row portfolio-content">
-		<div class="col-twelve">
-			<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-				<!-- portfolio-wrapper -->
-				<!-- Solar Tracker -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/pfe.png" alt="pfe" />
-						<a href="#modal-06" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Solar Tracker IOT</h3>
-									<span class="folio-types"> PFE Project </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- kasper -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/kasper.png" alt="kasper" />
-						<a href="#modal-01" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Kasper Design</h3>
-									<span class="folio-types">
-										Design i Converte to Code
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Weather station -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/station1.jpg" alt="station" />
-						<a href="#modal-05" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Weather station with alarme</h3>
-									<span class="folio-types"> Arduino Project </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Task App with Flask -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/TaskAppFlask.png" alt="station" />
-						<a href="#modal-08" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Task APP with Flask</h3>
-									<span class="folio-types"> Web Application </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Bondi -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/Bondi.png" alt="Bondi" />
-						<a href="#modal-02" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Bondi Template</h3>
-									<span class="folio-types">
-										Design i Converte to Code
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Leon -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/Leon.png" alt="Leon" />
-						<a href="#modal-03" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Leon Template</h3>
-									<span class="folio-types">
-										Design i Converte to Code
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- clothe Online store -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/store.png" alt="Store" />
-						<a href="#modal-04" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Clothes Online Store</h3>
-									<span class="folio-types"> Mini-Project </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- task app local -->
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="../static/images/portfolio/TaskApp.jpg" alt="Store" />
-						<a href="#modal-07" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Task App with LocalStorage</h3>
-									<span class="folio-types">Web App </span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
+  <div class="row portfolio-content">
+    <div class="col-twelve">
+      <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+        <!-- portfolio-wrapper -->
+        <!-- Solar Tracker -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/pfe.png" alt="pfe" />
+            <a href="#modal-06" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Solar Tracker IOT</h3>
+                  <span class="folio-types"> PFE Project </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- kasper -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/kasper.png" alt="kasper" />
+            <a href="#modal-01" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Kasper Design</h3>
+                  <span class="folio-types"> Design i Converte to Code </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Weather station -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/station1.jpg" alt="station" />
+            <a href="#modal-05" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Weather station with alarme</h3>
+                  <span class="folio-types"> Arduino Project </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Task App with Flask -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img
+              src="../static/images/portfolio/TaskAppFlask.png"
+              alt="station"
+            />
+            <a href="#modal-08" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Task APP with Flask</h3>
+                  <span class="folio-types"> Web Application </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Bondi -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/Bondi.png" alt="Bondi" />
+            <a href="#modal-02" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Bondi Template</h3>
+                  <span class="folio-types"> Design i Converte to Code </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Leon -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/Leon.png" alt="Leon" />
+            <a href="#modal-03" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Leon Template</h3>
+                  <span class="folio-types"> Design i Converte to Code </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- clothe Online store -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/store.png" alt="Store" />
+            <a href="#modal-04" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Clothes Online Store</h3>
+                  <span class="folio-types"> Mini-Project </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- task app local -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/TaskApp.jpg" alt="Store" />
+            <a href="#modal-07" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Task App with LocalStorage</h3>
+                  <span class="folio-types">Web App </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-
-
-				<!-- modal popups - begin
+        <!-- modal popups - begin
 	            ============================================================= -->
-				<!-- kasper modal -->
-				<div id="modal-01" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/kasper.png" alt="" />
-					</div>
+        <!-- kasper modal -->
+        <div id="modal-01" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/kasper.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Kasper Design</h4>
-						<p>
-							I code the Kasper Design with HTML5 & CSS3 and Vanilla JavaScript
-							with no front-end framework, also I add a back-end app to template
-							with a flask framework and SQLite to make it reusable .
-						</p>
+          <div class="description-box">
+            <h4>Kasper Design</h4>
+            <p>
+              I code the Kasper Design with HTML5 & CSS3 and Vanilla JavaScript
+              with no front-end framework, also I add a back-end app to template
+              with a flask framework and SQLite to make it reusable .
+            </p>
 
-						<div class="categories">Web Development</div>
-						<div class="categories"><a href="http://kaspertemplate.pythonanywhere.com/">Click details for live demo</a></div>
-					</div>
+            <div class="categories">Web Development</div>
+            <div class="categories">
+              <a href="http://kaspertemplate.pythonanywhere.com/"
+                >Click details for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Kasper-Template">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-01 -->
-				<!-- bondi -->
-				<div id="modal-02" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/Bondi.png" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Kasper-Template">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-01 -->
+        <!-- bondi -->
+        <div id="modal-02" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/Bondi.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Bondi Template</h4>
-						<p>
-							This template based on Bootstrap 5, HTML5, some CSS3 and
-							JavaScript to add a filter feature of the blog.
-						</p>
+          <div class="description-box">
+            <h4>Bondi Template</h4>
+            <p>
+              This template based on Bootstrap 5, HTML5, some CSS3 and
+              JavaScript to add a filter feature of the blog.
+            </p>
 
-						<div class="categories">Front-end Development</div>
-						<div class="categories"><a href="https://h-sohaib.github.io/Bondi-Template/">Click for live demo</a>
-						</div>
-					</div>
+            <div class="categories">Front-end Development</div>
+            <div class="categories">
+              <a href="https://h-sohaib.github.io/Bondi-Template/"
+                >Click for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Bondi-Template">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-02 -->
-				<!-- Leon -->
-				<div id="modal-03" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/Leon.png" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Bondi-Template">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-02 -->
+        <!-- Leon -->
+        <div id="modal-03" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/Leon.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Leon Template</h4>
-						<p>
-							Simple template encoded with HTML & CSS with few lines
-							of JavaScript for the button menu feature.
-						</p>
+          <div class="description-box">
+            <h4>Leon Template</h4>
+            <p>
+              Simple template encoded with HTML & CSS with few lines of
+              JavaScript for the button menu feature.
+            </p>
 
-						<div class="categories">Front-end Development</div>
-						<div class="categories"><a href="https://h-sohaib.github.io/Leon-Template/">Click for live demo</a>
-						</div>
-					</div>
+            <div class="categories">Front-end Development</div>
+            <div class="categories">
+              <a href="https://h-sohaib.github.io/Leon-Template/"
+                >Click for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Leon-Template">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-03 -->
-				<!-- Clothes Online -->
-				<div id="modal-04" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/store.png" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Leon-Template">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-03 -->
+        <!-- Clothes Online -->
+        <div id="modal-04" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/store.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Clothes Online Store</h4>
-						<p>
-							The website doesn't allow user to see the current product in
-							database after he registered on the website, after logging in
-							to the site , the user can access the product display page to
-							see their prices and how many pieces are currently available
-						</p>
+          <div class="description-box">
+            <h4>Clothes Online Store</h4>
+            <p>
+              The website doesn't allow user to see the current product in
+              database after he registered on the website, after logging in to
+              the site , the user can access the product display page to see
+              their prices and how many pieces are currently available
+            </p>
 
-						<div class="categories">Web Development</div>
-						<div class="categories"><a href="https://clothesonlinestore.pythonanywhere.com/">Click for live demo</a>
-					</div>
-				</div>
+            <div class="categories">Web Development</div>
+            <div class="categories">
+              <a href="https://clothesonlinestore.pythonanywhere.com/"
+                >Click for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Clothes-Online-Store">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-04 -->
-				<!-- Weather station  -->
-				<div id="modal-05" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/station2.jpg" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Clothes-Online-Store"
+              >Details</a
+            >
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-04 -->
+        <!-- Weather station  -->
+        <div id="modal-05" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/station2.jpg" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Weather station with alarme</h4>
-						<p>
-							Realization of a weather station with alarm based on Arduino
-							and RTC DS3231 which displays the physical atmospheric
-							quantities in a 16*2 LCD with an alarm adjustable by user.
-						</p>
+          <div class="description-box">
+            <h4>Weather station with alarme</h4>
+            <p>
+              Realization of a weather station with alarm based on Arduino and
+              RTC DS3231 which displays the physical atmospheric quantities in a
+              16*2 LCD with an alarm adjustable by user.
+            </p>
 
-						<div class="categories">Arduino Project</div>
-						<div class="categories"><a href="{{ url_for( 'download' ,file='WeatherStationRapport.pdf' ) }}">Download Rapport</a></div>
-					</div>
+            <div class="categories">Arduino Project</div>
+            <div class="categories">
+              <a
+                href="{{ url_for( 'download' ,file='WeatherStationRapport.pdf' ) }}"
+                >Download Rapport</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="{{ url_for( 'download' ,file='Weather station.zip' ) }}">Download project</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-05 -->
-				<!-- Solar Tracker -->
-				<div id="modal-06" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/pfe.png" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="{{ url_for( 'download' ,file='Weather station.zip' ) }}"
+              >Download project</a
+            >
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-05 -->
+        <!-- Solar Tracker -->
+        <div id="modal-06" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/pfe.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Solar Tracker IOT</h4>
-						<p>
-							Realization of an IOT Solar Tracker with a photovoltaic panel based
-							on Arduino and Ethernet Sheild connected
-							to firebase database by a flask server and HTTP protocol, and the
-							visualization of the values measured by the
-						</p>
+          <div class="description-box">
+            <h4>Solar Tracker IOT</h4>
+            <p>
+              Realization of an IOT Solar Tracker with a photovoltaic panel
+              based on Arduino and Ethernet Sheild connected to firebase
+              database by a flask server and HTTP protocol, and the
+              visualization of the values measured by the
+            </p>
 
-						<div class="categories">Arduino Project & Web Development</div>
-					</div>
+            <div class="categories">Arduino Project & Web Development</div>
+          </div>
 
-					<div class="link-box">
-						<a href="http://www.behance.net">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-06 -->
-				<!-- Task app Local -->
-				<div id="modal-07" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/TaskApp.jpg" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-06 -->
+        <!-- Task app Local -->
+        <div id="modal-07" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/TaskApp.jpg" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Task App with LocalStorage</h4>
-						<p>
-							A task application with add and delete tasks with a LocalStorage feature to store
-							tasks permanently. Even the page reloaded
-						</p>
+          <div class="description-box">
+            <h4>Task App with LocalStorage</h4>
+            <p>
+              A task application with add and delete tasks with a LocalStorage
+              feature to store tasks permanently. Even the page reloaded
+            </p>
 
-						<div class="categories">Web Development</div>
-						<div class="categories"><a href="https://h-sohaib.github.io/Task_app/">Click for live demo</a>
-						</div>
-					</div>
+            <div class="categories">Web Development</div>
+            <div class="categories">
+              <a href="https://h-sohaib.github.io/Task_app/"
+                >Click for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/Task_app">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-07 -->
-				<!-- Task app wit FLASK -->
-				<div id="modal-08" class="popup-modal slider mfp-hide">
-					<div class="media">
-						<img src="../static/images/portfolio/TaskAppFlask.png" alt="" />
-					</div>
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Task_app">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-07 -->
+        <!-- Task app wit FLASK -->
+        <div id="modal-08" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/TaskAppFlask.png" alt="" />
+          </div>
 
-					<div class="description-box">
-						<h4>Task APP with Flask</h4>
-						<p>
-							Task App with feature of add, remove, mark completed tasks.
-							Tasks are stored in SQLite DB, the app interacts with the DB
-							via Ajax Requests in the background .
-						</p>
+          <div class="description-box">
+            <h4>Task APP with Flask</h4>
+            <p>
+              Task App with feature of add, remove, mark completed tasks. Tasks
+              are stored in SQLite DB, the app interacts with the DB via Ajax
+              Requests in the background .
+            </p>
 
-						<div class="categories">Web Application</div>
-						<div class="categories"><a href="http://taskappjquery.pythonanywhere.com/">Click for live demo</a>
-						</div>
-					</div>
+            <div class="categories">Web Application</div>
+            <div class="categories">
+              <a href="http://taskappjquery.pythonanywhere.com/"
+                >Click for live demo</a
+              >
+            </div>
+          </div>
 
-					<div class="link-box">
-						<a href="https://github.com/H-sohaib/TaskApp_jQuery.git">Details</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-				</div>
-				<!-- /modal-07 -->
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/TaskApp_jQuery.git">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- /modal-07 -->
 
-				<!-- modal popups - end
+        <!-- modal popups - end
 	            ============================================================= -->
-			</div>
-			<!-- /portfolio-wrapper -->
+      </div>
+      <!-- /portfolio-wrapper -->
+    </div>
+    <!-- /twelve -->
+  </div>
+  <!-- /portfolio-content -->
 
-		</div>
-		<!-- /twelve -->
-	</div>
-	<!-- /portfolio-content -->
-
-	<!-- more button -->
-	<div class="more-div">
-		<a href="{{ url_for('works') }}"><button>More of My work</button></a>
-	</div>
-	<!-- end more -->
+  <!-- more button -->
+  <div class="more-div">
+    <a href="{{ url_for('works') }}"><button>More of My work</button></a>
+  </div>
+  <!-- end more -->
 </section>
 <!-- /portfolio -->
 
 <!-- contact
    ================================================== -->
 <section id="contact">
-	<div class="row section-intro">
-		<div class="col-twelve">
-			<h5>Contact</h5>
-			<h1>I'd Love To Hear From You.</h1>
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Contact</h5>
+      <h1>I'd Love To Hear From You.</h1>
 
-			<p class="lead"></p>
-		</div>
-	</div>
-	<!-- /section-intro -->
+      <p class="lead"></p>
+    </div>
+  </div>
+  <!-- /section-intro -->
 
-	<div class="row contact-form">
-		<div class="col-twelve">
-			<!-- form -->
-			<form name="contactForm" id="contactForm" method="post" action="">
-				<fieldset>
-					<div class="form-field">
-						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-							required="" />
-					</div>
-					<div class="form-field">
-						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" />
-					</div>
-					<div class="form-field">
-						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" />
-					</div>
-					<div class="form-field">
-						<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-							required=""></textarea>
-					</div>
-					<div class="form-field">
-						<button class="submitform">Submit</button>
-						<div id="submit-loader">
-							<div class="text-loader">Sending...</div>
-							<div class="s-loader">
-								<div class="bounce1"></div>
-								<div class="bounce2"></div>
-								<div class="bounce3"></div>
-							</div>
-						</div>
-					</div>
-				</fieldset>
-			</form>
-			<!-- Form End -->
+  <div class="row contact-form">
+    <div class="col-twelve">
+      <!-- form -->
+      <form name="contactForm" id="contactForm" method="post" action="">
+        <fieldset>
+          <div class="form-field">
+            <input
+              name="contactName"
+              type="text"
+              id="contactName"
+              placeholder="Name"
+              value=""
+              minlength="2"
+              required=""
+            />
+          </div>
+          <div class="form-field">
+            <input
+              name="contactEmail"
+              type="email"
+              id="contactEmail"
+              placeholder="Email"
+              value=""
+              required=""
+            />
+          </div>
+          <div class="form-field">
+            <input
+              name="contactSubject"
+              type="text"
+              id="contactSubject"
+              placeholder="Subject"
+              value=""
+            />
+          </div>
+          <div class="form-field">
+            <textarea
+              name="contactMessage"
+              id="contactMessage"
+              placeholder="message"
+              rows="10"
+              cols="50"
+              required=""
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <button class="submitform">Submit</button>
+            <div id="submit-loader">
+              <div class="text-loader">Sending...</div>
+              <div class="s-loader">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <!-- Form End -->
 
-			<!-- contact-warning -->
-			<div id="message-warning"></div>
-			<!-- contact-success -->
-			<div id="message-success">
-				<i class="fa fa-check"></i>Your message was sent, thank you!<br />
-			</div>
-		</div>
-		<!-- /col-twelve -->
-	</div>
-	<!-- /contact-form -->
+      <!-- contact-warning -->
+      <div id="message-warning"></div>
+      <!-- contact-success -->
+      <div id="message-success">
+        <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+      </div>
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /contact-form -->
 
-	<div class="row contact-info">
-		<div class="col-four tab-full">
-			<div class="icon">
-				<i class="icon-pin"></i>
-			</div>
+  <div class="row contact-info">
+    <div class="col-four tab-full">
+      <div class="icon">
+        <i class="icon-pin"></i>
+      </div>
 
-			<h5>Where to find me</h5>
+      <h5>Where to find me</h5>
 
-			<p>
-				Dr caid<br />
-				Harbil<br />
-				Marrakech , Maroc
-			</p>
-		</div>
+      <p>
+        Dr caid<br />
+        Harbil<br />
+        Marrakech , Maroc
+      </p>
+    </div>
 
-		<div class="col-four tab-full collapse">
-			<div class="icon">
-				<i class="icon-mail"></i>
-			</div>
+    <div class="col-four tab-full collapse">
+      <div class="icon">
+        <i class="icon-mail"></i>
+      </div>
 
-			<h5>Email Me At</h5>
+      <h5>Email Me At</h5>
 
-			<p>
-				harraoui.sohaib1@gmail.com<br />
-				sohaib.harraoui@usmba.ac.ma
-			</p>
-		</div>
+      <p>
+        harraoui.sohaib1@gmail.com<br />
+        sohaib.harraoui@usmba.ac.ma
+      </p>
+    </div>
 
-		<div class="col-four tab-full">
-			<div class="icon">
-				<i class="icon-phone"></i>
-			</div>
+    <div class="col-four tab-full">
+      <div class="icon">
+        <i class="icon-phone"></i>
+      </div>
 
-			<h5>Call Me At</h5>
+      <h5>Call Me At</h5>
 
-			<p>Phone: +212 687 181086</p>
-		</div>
-	</div>
-	<!-- /contact-info -->
+      <p>Phone: +212 687 181086</p>
+    </div>
+  </div>
+  <!-- /contact-info -->
 </section>
 <!-- /contact -->
-{% endblock %}
-
-{% block script %}
+{% endblock %} {% block script %}
 <script src="../static/js/main.js"></script>
 
 {% endblock%}
