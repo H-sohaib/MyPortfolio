@@ -14,6 +14,7 @@ block links %} {% endblock %} {% block style %}
   .more-div a:hover button {
     color: #cc005f;
   }
+
   .cert {
     font-weight: bold;
     margin-top: -10px;
@@ -32,13 +33,11 @@ block links %} {% endblock %} {% block style %}
         <h1>I'm Harraoui Sohaib.</h1>
 
         <p class="intro-position">
-          <span>Embedded Systems Student</span>
+          <span>Embedded Systems Technician</span>
           <span>Web Developer</span>
         </p>
 
-        <a class="button stroke smoothscroll" href="#about" title=""
-          >More About Me</a
-        >
+        <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
       </div>
     </div>
   </div>
@@ -46,17 +45,13 @@ block links %} {% endblock %} {% block style %}
 
   <ul class="intro-social">
     <li>
-      <a href="https://www.linkedin.com/in/harraoui-sohaib-89849b246/"
-        ><i class="fa fa-linkedin"></i
-      ></a>
+      <a href="https://www.linkedin.com/in/harraoui-sohaib-89849b246/"><i class="fa fa-linkedin"></i></a>
     </li>
     <li>
       <a href="https://github.com/H-sohaib"><i class="fa fa-github"></i></a>
     </li>
     <li>
-      <a href="https://www.instagram.com/harraoui_sohaib/"
-        ><i class="fa fa-instagram"></i
-      ></a>
+      <a href="https://www.instagram.com/harraoui_sohaib/"><i class="fa fa-instagram"></i></a>
     </li>
   </ul>
   <!-- /intro-social -->
@@ -84,12 +79,15 @@ block links %} {% endblock %} {% block style %}
     <div class="col-six tab-full">
       <h3>Profile</h3>
       <p>
-        I am very motivated and ambitious, also very passionate about
-        technology. I love bugs and making things work and learning about
-        technologies And how things are working. I have acquired a solid
-        knowledge of the fundamentals of the web and embedded systems through
-        self-study and my academic background and I am currently looking for a
-        new experience to practice my knowledge.
+        I am highly motivated and ambitious, with a deep passion for technology. I find immense satisfaction in
+        resolving issues, making processes function seamlessly, and continuously expanding my understanding of various
+        technologies and their inner workings. My dedication to self-study and my academic foundation have equipped me
+        with a strong grasp of both web fundamentals and embedded systems. <br>
+
+        Currently, I am embracing a new phase in my career as a freelancer specializing in web development. My expertise
+        spans PHP and Laravel, enabling me to craft dynamic and robust web solutions. Additionally, I excel in Python
+        and Flask, leveraging these tools to create efficient and sophisticated applications. I am excited about this
+        opportunity to further apply and refine my knowledge while delivering top-notch projects.
       </p>
 
       <ul class="info-list">
@@ -103,7 +101,7 @@ block links %} {% endblock %} {% block style %}
         </li>
         <li>
           <strong>Job:</strong>
-          <span>Student, Embedded Systems</span>
+          <span>Freelancer</span>
         </li>
         <li>
           <strong>Email:</strong>
@@ -121,6 +119,14 @@ block links %} {% endblock %} {% block style %}
 
       <ul class="skill-bars">
         <li>
+          <div class="progress percent65"><span>65%</span></div>
+          <strong>PHP</strong>
+        </li>
+        <li>
+          <div class="progress percent75"><span>75%</span></div>
+          <strong>Laravel</strong>
+        </li>
+        <li>
           <div class="progress percent60"><span>60%</span></div>
           <strong>HTML5</strong>
         </li>
@@ -129,11 +135,15 @@ block links %} {% endblock %} {% block style %}
           <strong>CSS3</strong>
         </li>
         <li>
-          <div class="progress percent60"><span>60%</span></div>
+          <div class="progress percent80"><span>80%</span></div>
           <strong>Bootstrap</strong>
         </li>
         <li>
-          <div class="progress percent55"><span>55%</span></div>
+          <div class="progress percent65"><span>65%</span></div>
+          <strong>Tailwind CSS</strong>
+        </li>
+        <li>
+          <div class="progress percent60"><span>60%</span></div>
           <strong>JavaScript</strong>
         </li>
         <li>
@@ -145,20 +155,20 @@ block links %} {% endblock %} {% block style %}
           <strong>Flask</strong>
         </li>
         <li>
-          <div class="progress percent55"><span>55%</span></div>
+          <div class="progress percent65"><span>65%</span></div>
           <strong>SQlite,MySQL</strong>
         </li>
         <li>
-          <div class="progress percent60"><span>60%</span></div>
+          <div class="progress percent50"><span>50%</span></div>
           <strong>Firebase</strong>
         </li>
         <li>
-          <div class="progress percent50"><span>50%</span></div>
+          <div class="progress percent60"><span>60%</span></div>
           <strong>git & github</strong>
         </li>
         <li>
           <div class="progress percent80"><span>80%</span></div>
-          <strong>Arduino & Embedded c++</strong>
+          <strong>Arduino & Embedded C/C++</strong>
         </li>
       </ul>
       <!-- /skill-bars -->
@@ -168,13 +178,8 @@ block links %} {% endblock %} {% block style %}
   <div class="row button-section">
     <div class="col-twelve">
       <!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
-      <a
-        href="{{ url_for( 'download' ,file='myCV_V2.0.pdf' ) }}"
-        title="Download CV"
-        class="button button-primary"
-      >
-        Download CV</a
-      >
+      <a href="{{ url_for( 'download' ,file='myCV_V2.0.pdf' ) }}" title="Download CV" class="button button-primary">
+        Download CV</a>
     </div>
   </div>
 </section>
@@ -219,7 +224,7 @@ block links %} {% endblock %} {% block style %}
               University Sidi Mohamed Ben Abdellah Higher School of technology
               (EST) - Fes
             </h4>
-            <p>Major of S2 & S3</p>
+            <p>Major of S2 & S3 and 2nd SE sectorranking in 2023</p>
           </div>
         </div>
         <!-- /timeline-block -->
@@ -268,10 +273,7 @@ block links %} {% endblock %} {% block style %}
           <div class="timeline-content">
             <h4>Become a Software Developer : 30 hours 26 min</h4>
             <div class="categories cert">
-              <a
-                href="{{ url_for( 'download' ,file='linkedinCertificate.jpg' ) }}"
-                >Click to view certificate</a
-              >
+              <a href="{{ url_for( 'download' ,file='linkedinCertificate.jpg' ) }}">Click to view certificate</a>
             </div>
             <p>
               Top skills covered : <br />
@@ -294,10 +296,7 @@ block links %} {% endblock %} {% block style %}
             <div class="timeline-content">
               <h4>Microcontrôleurs & IoT</h4>
               <div class="categories cert">
-                <a
-                  href="{{ url_for( 'download' ,file='OrangeCertificate.jpg' ) }}"
-                  >Click to view certificate</a
-                >
+                <a href="{{ url_for( 'download' ,file='OrangeCertificate.jpg' ) }}">Click to view certificate</a>
               </div>
               <p>
                 Has actively participate in
@@ -323,6 +322,8 @@ block links %} {% endblock %} {% block style %}
 
     <div class="col-twelve">
       <div class="timeline-wrap">
+
+        <!-- Init intership -->
         <div class="timeline-block">
           <div class="timeline-ico">
             <i class="fa fa-briefcase"></i>
@@ -336,55 +337,14 @@ block links %} {% endblock %} {% block style %}
           <div class="timeline-content">
             <h4>SO SYSTEME</h4>
             <p>
-              Installation of surveillance cameras around the company's
-              workshops
+              Installation of surveillance cameras around the workshops of the company, the help of a technician for the
+              test of a network installation and other office tasks.
             </p>
           </div>
         </div>
         <!-- /timeline-block -->
 
-        <div class="timeline-block">
-          <div class="timeline-ico">
-            <i class="fa fa-briefcase"></i>
-          </div>
-
-          <div class="timeline-header">
-            <h3>Mini-Projet</h3>
-            <p></p>
-          </div>
-
-          <div class="timeline-content">
-            <h4>Weather station with alarme</h4>
-            <p>
-              Realization of a weather station with alarm based on Arduino and
-              RTC DS3231 which displays the physical atmospheric quantities in a
-              16*2 LCD with an alarm adjustable by user.
-            </p>
-          </div>
-        </div>
-        <!-- /timeline-block -->
-
-        <div class="timeline-block">
-          <div class="timeline-ico">
-            <i class="fa fa-briefcase"></i>
-          </div>
-
-          <div class="timeline-header">
-            <h3>Mini-Projet</h3>
-            <p></p>
-          </div>
-
-          <div class="timeline-content">
-            <h4>Web site for the sale of clothes</h4>
-            <p>
-              <strong>front-end</strong> : HTML , CSS , Bootstrap , JavaScript
-              <br />
-              <strong>back-end</strong> : Python ( Flask , SQLAlchemy ) , SQLite
-            </p>
-          </div>
-        </div>
-        <!-- /timeline-block -->
-
+        <!-- PFE -->
         <div class="timeline-block">
           <div class="timeline-ico">
             <i class="fa fa-briefcase"></i>
@@ -413,7 +373,77 @@ block links %} {% endblock %} {% block style %}
             </p>
           </div>
         </div>
+
+        <!-- PFE Intership -->
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>Projet PFE</h3>
+            <p></p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>PFE internship: Study of embedded cards & Design and development of a Single-page website with a custom
+              Content Control System</h4>
+            <p>
+              Study and build manipulations with ESP32-Cam, Arduino Vidor 4000, Raspberry Pi with touch screen.
+              Development of a presentation website for the Embedded Systems sector in the EAST of Fez, with a
+              dashboardto control the content of the visitors' page. <br />
+              <strong>front-end</strong> : HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and Blade Templates
+              <br />
+              <strong>back-end</strong> : PHP with Laravel framework and MySQL
+              <br />
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>Mini-Projet</h3>
+            <p></p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Weather station with alarme</h4>
+            <p>
+              Realization of a weather station with alarm based on Arduino and
+              RTC DS3231 which displays the physical atmospheric quantities in a
+              16*2 LCD with an alarm adjustable by user.
+            </p>
+          </div>
+        </div>
         <!-- /timeline-block -->
+
+        <!-- Clothe shop site  -->
+        <!-- <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>Mini-Projet</h3>
+            <p></p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Web site for the sale of clothes</h4>
+            <p>
+              <strong>front-end</strong> : HTML , CSS , Bootstrap , JavaScript
+              <br />
+              <strong>back-end</strong> : Python ( Flask , SQLAlchemy ) , SQLite
+            </p>
+          </div>
+        </div> -->
+        <!-- /timeline-block -->
+
+
       </div>
       <!-- /timeline-wrap -->
     </div>
@@ -440,6 +470,38 @@ block links %} {% endblock %} {% block style %}
     <div class="col-twelve">
       <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
         <!-- portfolio-wrapper -->
+
+        <!-- Resturent reservation website -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/restaurant.png" alt="pfe" />
+            <a href="#modal-10" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Restaurant Reservation Website</h3>
+                  <span class="folio-types">WEB Application</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- EST SE_Website -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img src="../static/images/portfolio/PFEStage.png" alt="pfe" />
+            <a href="#modal-09" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell">
+                  <h3 class="folio-title">Single-page website with a custom Content Control
+                    System</h3>
+                  <span class="folio-types">PFE internship project</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <!-- Solar Tracker -->
         <div class="bgrid folio-item">
           <div class="item-wrap">
@@ -485,10 +547,7 @@ block links %} {% endblock %} {% block style %}
         <!-- Task App with Flask -->
         <div class="bgrid folio-item">
           <div class="item-wrap">
-            <img
-              src="../static/images/portfolio/TaskAppFlask.png"
-              alt="station"
-            />
+            <img src="../static/images/portfolio/TaskAppFlask.png" alt="station" />
             <a href="#modal-08" class="overlay">
               <div class="folio-item-table">
                 <div class="folio-item-cell">
@@ -574,9 +633,7 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Web Development</div>
             <div class="categories">
-              <a href="http://kaspertemplate.pythonanywhere.com/"
-                >Click details for live demo</a
-              >
+              <a href="http://kaspertemplate.pythonanywhere.com/">Click details for live demo</a>
             </div>
           </div>
 
@@ -601,9 +658,7 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Front-end Development</div>
             <div class="categories">
-              <a href="https://h-sohaib.github.io/Bondi-Template/"
-                >Click for live demo</a
-              >
+              <a href="https://h-sohaib.github.io/Bondi-Template/">Click for live demo</a>
             </div>
           </div>
 
@@ -628,9 +683,7 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Front-end Development</div>
             <div class="categories">
-              <a href="https://h-sohaib.github.io/Leon-Template/"
-                >Click for live demo</a
-              >
+              <a href="https://h-sohaib.github.io/Leon-Template/">Click for live demo</a>
             </div>
           </div>
 
@@ -657,16 +710,12 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Web Development</div>
             <div class="categories">
-              <a href="https://clothesonlinestore.pythonanywhere.com/"
-                >Click for live demo</a
-              >
+              <a href="https://clothesonlinestore.pythonanywhere.com/">Click for live demo</a>
             </div>
           </div>
 
           <div class="link-box">
-            <a href="https://github.com/H-sohaib/Clothes-Online-Store"
-              >Details</a
-            >
+            <a href="https://github.com/H-sohaib/Clothes-Online-Store">Details</a>
             <a href="#" class="popup-modal-dismiss">Close</a>
           </div>
         </div>
@@ -687,17 +736,12 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Arduino Project</div>
             <div class="categories">
-              <a
-                href="{{ url_for( 'download' ,file='WeatherStationRapport.pdf' ) }}"
-                >Download Rapport</a
-              >
+              <a href="{{ url_for( 'download' ,file='WeatherStationRapport.pdf' ) }}">Download Rapport</a>
             </div>
           </div>
 
           <div class="link-box">
-            <a href="{{ url_for( 'download' ,file='Weather station.zip' ) }}"
-              >Download project</a
-            >
+            <a href="{{ url_for( 'download' ,file='Weather station.zip' ) }}">Download project</a>
             <a href="#" class="popup-modal-dismiss">Close</a>
           </div>
         </div>
@@ -741,9 +785,7 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Web Development</div>
             <div class="categories">
-              <a href="https://h-sohaib.github.io/Task_app/"
-                >Click for live demo</a
-              >
+              <a href="https://h-sohaib.github.io/Task_app/">Click for live demo</a>
             </div>
           </div>
 
@@ -769,9 +811,7 @@ block links %} {% endblock %} {% block style %}
 
             <div class="categories">Web Application</div>
             <div class="categories">
-              <a href="http://taskappjquery.pythonanywhere.com/"
-                >Click for live demo</a
-              >
+              <a href="http://taskappjquery.pythonanywhere.com/">Click for live demo</a>
             </div>
           </div>
 
@@ -780,7 +820,64 @@ block links %} {% endblock %} {% block style %}
             <a href="#" class="popup-modal-dismiss">Close</a>
           </div>
         </div>
-        <!-- /modal-07 -->
+
+        <!-- /modal-09 -->
+        <!-- Task app wit FLASK -->
+        <div id="modal-09" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/PFEStage.png" alt="" />
+          </div>
+
+          <div class="description-box">
+            <h4>Single-page website with a custom Content Control
+              System</h4>
+            <p>
+              It is a website designed to present the SE program at ESTF. It has a single page with different sections,
+              some of which contain changeable content managed by a custom dashboard linked to it. This dashboard allows
+              administrators to perform operations such as creating, updating, or deleting content
+            </p>
+
+            <div class="categories">
+              PFE internship project</div>
+            <div class="categories">
+              <a href="https://estf-se.000webhostapp.com/">Click for live demo</a>
+            </div>
+          </div>
+
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/SE_Website.git">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+
+        <!-- /modal-10 -->
+        <!-- Task app wit FLASK -->
+        <div id="modal-10" class="popup-modal slider mfp-hide">
+          <div class="media">
+            <img src="../static/images/portfolio/restaurant.png" alt="" />
+          </div>
+
+          <div class="description-box">
+            <h4>
+              Restaurant Reservation Website</h4>
+            <p>
+              A restaurant reservation website that provides a client page showing the available menu and allows the
+              client to reserve a table in the restaurant on an available date. An associated dashboard allows the admin
+              to control the available dates, tables, and menu. It also allows them to visualize the reservations made
+              by clients.
+            </p>
+
+            <div class="categories">Web Application</div>
+            <div class="categories">
+              <a href="https://youtu.be/loZ0YOaOBcU">Click for watch demo</a>
+            </div>
+          </div>
+
+          <div class="link-box">
+            <a href="https://github.com/H-sohaib/Restaurant_app.git">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
 
         <!-- modal popups - end
 	            ============================================================= -->
@@ -818,44 +915,18 @@ block links %} {% endblock %} {% block style %}
       <form name="contactForm" id="contactForm" method="post" action="">
         <fieldset>
           <div class="form-field">
-            <input
-              name="contactName"
-              type="text"
-              id="contactName"
-              placeholder="Name"
-              value=""
-              minlength="2"
-              required=""
-            />
+            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+              required="" />
           </div>
           <div class="form-field">
-            <input
-              name="contactEmail"
-              type="email"
-              id="contactEmail"
-              placeholder="Email"
-              value=""
-              required=""
-            />
+            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" />
           </div>
           <div class="form-field">
-            <input
-              name="contactSubject"
-              type="text"
-              id="contactSubject"
-              placeholder="Subject"
-              value=""
-            />
+            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" />
           </div>
           <div class="form-field">
-            <textarea
-              name="contactMessage"
-              id="contactMessage"
-              placeholder="message"
-              rows="10"
-              cols="50"
-              required=""
-            ></textarea>
+            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+              required=""></textarea>
           </div>
           <div class="form-field">
             <button class="submitform">Submit</button>
