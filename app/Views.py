@@ -31,7 +31,7 @@ def home():
 @app.route('/download/<file>')
 def download(file):
     try:
-        if file in ["linkedinCertificate.jpg", "OrangeCertificate.jpg" , "NDG_Linux_Essentials.jpg" , "Introduction_IoT.jpg" , "Networking_Essentials.jpg" ,"ai.jpg"]:
+        if file in ["linkedinCertificate.jpg", "OrangeCertificate.jpg" , "NDG_Linux_Essentials.jpg" , "Introduction_IoT.jpg" , "Networking_Essentials.jpg" ,"ai.png"]:
             path = url_for("static", filename=f"sendFiles/{file}")
             return render_template("sendImg.html",  path=path, file=file.split(".")[0])
         else:
