@@ -1862,6 +1862,9 @@ header .logo a {
   }
 }
 @media only screen and (max-width: 768px) {
+  #resume .timeline-block {
+    flex-direction: column;
+  }
   #resume .timeline-wrap::before {
     left: 2.4rem;
   }
