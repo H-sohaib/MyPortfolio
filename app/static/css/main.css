@@ -1125,7 +1125,7 @@ input::-moz-focus-inner {
   color: #7d7d7d;
 }
 .section-intro {
-  max-width: 700px;
+  /* max-width: fit-content; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1611,7 +1611,7 @@ header .logo a {
 #about {
   background: #ffffff;
   padding-top: 12rem;
-  padding-bottom: 15rem;
+  /* padding-bottom: 15rem; */
 }
 #about .section-intro {
   margin-bottom: 3rem;
@@ -1640,7 +1640,7 @@ header .logo a {
   align-items: center;
   position: relative;
   text-align: left;
-  max-width: 850px;
+  /* max-width: 850px; */
   margin-bottom: 3.6rem;
 }
 .about-content :first-child {
