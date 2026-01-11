@@ -1,6 +1,6 @@
 # Portfolio Website - Harraoui Sohaib
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](./app/static/images/homa_page.png)
 
 ## Overview
 
